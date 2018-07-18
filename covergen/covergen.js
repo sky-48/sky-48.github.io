@@ -95,6 +95,15 @@ function uploadFile(that, seq) {
 }
 
 function setText(target_id, msg) {
-    document.getElementById(target_id).innerHTML = msg;
+    document.getElementById(target_id).innerHTML = mapAbbrToName(msg);
+}
+
+function mapAbbrToName(abbr) {
+    for (let member of team_x_members) {
+        abbr = abbr.replace(member.abbr, member.sname);
+        abbr = abbr.replace(member.abbr.toLowerCase(), member.sname);
+        console.log(member.abbr);
+    }
+    return abbr;
 }
 
