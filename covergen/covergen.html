@@ -1,0 +1,21 @@
+<html>
+
+<script src="dragme.js"></script>
+<script src="covergen.js"></script>
+<h3>Cover Gen v0.1</h3>
+<!-- text field & add button -->
+<input type="date" oninput="setText('title_text', this.value)" onchange="setText('title_text', this.value)">
+<!-- file upload and input names -->
+<div id='file_selection_container'></div>
+
+<input type="button" value="+" style="font-size: 16px; width: 50px" onclick="addSlot()">
+
+<hr />
+    
+<!-- canvas area: resolution should be 1146 x 717 -->
+<div id="canvas_container" style="position: relative; width:1146px">
+  <img src="backdrop-grey.jpg" alt="Background missing!" style="position: absolute; z-index: -1">
+  <p id="title_text" style="color:white; position: absolute; font-size: 24px; cursor: move" class="dragme"></p>
+</div>
+
+</html>
