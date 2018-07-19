@@ -1,6 +1,12 @@
 let pics = [], captions = []; // global array for dynamic size and layout adjustments
 
 function addSlot() {
+    
+    if (pics.length >= 5) {
+        alert("暂时只支持5个，正在考虑6人以上要不要分两排显示。");
+        return;
+    }
+
     let sequence = pics.length;
     
     // generate an <input> tag for editing texts, similar to the following as an example:
@@ -29,7 +35,7 @@ function addSlot() {
     let img_tag = document.createElement("img");
     img_tag.setAttribute('id', 'img_' + sequence);
     img_tag.setAttribute('class', 'dragme');
-    img_tag.setAttribute('style', 'position: absolute; cursor: move');
+    img_tag.setAttribute('style', "position: absolute; cursor: move; border: 5px solid #a4bd3e");
     img_tag.setAttribute('alt', '#' + (sequence + 1));
     canvas_container.appendChild(img_tag);
     
@@ -38,7 +44,7 @@ function addSlot() {
     let p_tag = document.createElement("p");
     p_tag.setAttribute('id', 'p_' + sequence);
     p_tag.setAttribute('class', 'dragme');
-    p_tag.setAttribute('style', 'position: absolute; cursor: move; color: white; text-align: center');
+    p_tag.setAttribute('style', 'position: absolute; cursor: move; color: white; font-size: 48px; text-align: center');
     p_tag.innerHTML = '#' + (sequence + 1);
     canvas_container.appendChild(p_tag);
     
@@ -66,18 +72,19 @@ function updateLayout() {
     let margin = min_margin + ((can_w - w * n - min_margin * (n + 1)) / (n + 1));
     
     let left = 0; // running counter to keep track of the `left` property in css
-    let top = 240;
+    let top_pic = 240;
+    let top_caption = 595;
     for(let i in pics) {
         left += margin;
         // adjust position of each pic::
         pics[i].style.width = w;
         pics[i].style.height = h;
         pics[i].style.left = left;
-        pics[i].style.top = top;
+        pics[i].style.top = top_pic;
         // adjust position of each caption:
         captions[i].style.width = w;
         captions[i].style.left = left;
-        captions[i].style.top = top + h;
+        captions[i].style.top = top_caption;
         left += w;
     }
 }
@@ -102,7 +109,6 @@ function mapAbbrToName(abbr) {
     for (let member of team_x_members) {
         abbr = abbr.replace(member.abbr, member.sname);
         abbr = abbr.replace(member.abbr.toLowerCase(), member.sname);
-        console.log(member.abbr);
     }
     return abbr;
 }
