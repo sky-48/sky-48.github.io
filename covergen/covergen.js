@@ -1,13 +1,7 @@
-let pics = [], slots = []; // global array holding profile pics and their backdrops for each slot, used for dynamic size and layout adjustments
+let slots = [], pics = []; // global array holding profile pics and their backdrops for each slot, used for dynamic size and layout adjustments
 
 function addSlot() {
-
-    // if (pics.length >= 5) {
-    //     alert("暂时只支持5个，6人以上考虑分两排显示。");
-    //     return;
-    // }
-
-    let sequence = pics.length;
+    let sequence = slots.length;
 
     // generate an <input> tag for editing texts, similar to the following as an example:
     // <input id='input_text_1' type="text" oninput="setText('p_1', this.value)" onchange="setText('p_1', this.value)">
@@ -29,37 +23,26 @@ function addSlot() {
     file_selection_container.appendChild(input_file);
     file_selection_container.appendChild(document.createElement("br"));
 
-
-    // <div id="dragdiv" style="position: absolute; width: 200px">
-    //     <img id="" src='border.png' style="">
-    //     <img id="" src='pic.png' style="">
+    // goal:
+    // </div id='slot_0' class='slot'>
+    //     <img id='pic_0' class='pic' alt = 'Pic #0'>
     // </div>
-    //     <div id="slot_1" class="slot" >
-    //     <img id="" src='pic.png' style="position: absolute; left: 5px; top: 10px; width: 200px; cursor: move">
-    // </div>
-
-
-    // generate an <img> tag similar to the following:
-    // <img id="img_1" alt="1" style="position: absolute; top: 100px; left: 200px; width: 20%; cursor: move" class="dragme">
-    let canvas_container = document.getElementById('canvas_container');
-
-    let slot_tag = document.createElement("div");
+    let slot_tag = document.createElement('div');
     slot_tag.setAttribute('id', 'slot_' + sequence);
     slot_tag.setAttribute('class', 'slot');
+    dragElement(slot_tag); // allow drag and drop to move the element around
+    slots.push(slot_tag);
 
-    let pic_tag = document.createElement("img");
+    let pic_tag = document.createElement('img');
     pic_tag.setAttribute('id', 'pic_' + sequence);
     pic_tag.setAttribute('class', 'pic');
     pic_tag.setAttribute('alt', 'Pic #' + (sequence + 1));
+    pics.push(pic_tag);
 
+    let canvas_container = document.getElementById('canvas_container');
     slot_tag.appendChild(pic_tag);
     canvas_container.appendChild(slot_tag);
-    // append <img> and <p> tags to global array, so we can adjust their positions at a later time:
-    pics.push(pic_tag);
-    slots.push(slot_tag);
-
-    dragElement(document.getElementById("slot_" + sequence));
-
+    
     updateLayout();
 }
 
