@@ -3,26 +3,6 @@ let slots = [], pics = []; // global array holding profile pics and their backdr
 function addSlot() {
     let sequence = slots.length;
 
-    // generate an <input> tag for editing texts, similar to the following as an example:
-    // <input id='input_text_1' type="text" oninput="setText('p_1', this.value)" onchange="setText('p_1', this.value)">
-    let file_selection_container = document.getElementById('file_selection_container');
-    let input_text = document.createElement("input");
-    input_text.setAttribute('id', 'input_text_' + sequence);
-    input_text.setAttribute('type', 'text');
-    let script_line = "setText('p_" + sequence + "', this.value)";
-    input_text.setAttribute('oninput', script_line);
-    input_text.setAttribute('onchange', script_line);
-    file_selection_container.appendChild(input_text);
-
-    // generate an <input> tag for uploading files, similar to the following as an example:
-    // <input id='input_file_1' type="file" onchange="uploadFile(this, '1')"><br>
-    let input_file = document.createElement("input");
-    input_file.setAttribute('id', 'input_file_' + sequence);
-    input_file.setAttribute('type', 'file');
-    input_file.setAttribute('onchange', "uploadFile(this, '" + sequence + "')");
-    file_selection_container.appendChild(input_file);
-    file_selection_container.appendChild(document.createElement("br"));
-
     // goal:
     // </div id='slot_0' class='slot'>
     //     <img id='pic_0' class='pic' alt = 'Pic #0'>
@@ -42,7 +22,7 @@ function addSlot() {
     let canvas_container = document.getElementById('canvas_container');
     slot_tag.appendChild(pic_tag);
     canvas_container.appendChild(slot_tag);
-    
+
     updateLayout();
 }
 
@@ -83,12 +63,9 @@ function updateLayout() {
     }
 }
 
-function uploadFile(that, seq) {
-    if (that.files[0]) {
-        // display pic:
-        pics[seq].src = window.URL.createObjectURL(that.files[0]);
-        // console.log(getMemberNamesFromFileName(that.value));
-    }
+function addContent(content) { // called when each new file is uploaded
+    addSlot();
+    pics[pics.length - 1].src = content;
 }
 
 function getMemberNamesFromFileName(filename) { // converts file name (e.g. 'C:\fakepath\qj.png') to member name(s)
