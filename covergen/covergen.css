@@ -1,0 +1,37 @@
+#canvas_container {
+    /* resolution should be 1146 x 717 */
+    position: relative;
+    width: 1146px;
+    height: 717px;
+    background-image: url('backdrop-x.jpg');
+}
+
+#title_text {
+    color: #666666;
+    position: absolute;
+    font-size: 32px;
+    cursor: move;
+    left: 666px;
+    top: 155px;
+}
+
+.slot {
+    position: absolute;
+    cursor: move;
+    
+    background-image: url('ip7case.png');
+    background-size: contain;
+}
+
+/* .border {
+    position: absolute;
+    width: 210px;
+    cursor: move
+} */
+
+.pic {
+    /* border: 5px solid #a4bd3e */
+    position: absolute;
+    /* background: #adffd2; */
+    cursor: move
+}

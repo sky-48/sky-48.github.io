@@ -1,12 +1,14 @@
 <html>
+
 <head>
-  <meta charset="utf-8">
-  <script src="dragme.js"></script>
-  <script src="data.js"></script>
-  <script src="covergen.js"></script>
+    <meta charset="utf-8">
+    <script src="data.js"></script>
+    <script src="covergen.js"></script>
+    <script src="drag_element.js"></script>
+    <link rel="stylesheet" href="covergen.css">
 </head>
 
-<h3>Cover Gen v0.1</h3>
+<h3>Cover Gen v0.2</h3>
 <!-- text field & add button -->
 <input type="date" oninput="setText('title_text', this.value)" onchange="setText('title_text', this.value)">
 <!-- file upload and input names -->
@@ -17,9 +19,8 @@
 <hr />
 
 <!-- canvas area: resolution should be 1146 x 717 -->
-<div id="canvas_container" style="position: relative; width:1146px">
-  <img src="backdrop-x.jpg" alt="Background missing!" style="position: absolute; z-index: -1">
-  <p id="title_text" style="color:#666666; position: absolute; font-size: 32px; cursor: move; left: 666px; top: 155px;" class="dragme"></p>
+<div id="canvas_container">
+    <p id="title_text"></p>
 </div>
 
 </html>
