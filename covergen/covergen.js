@@ -88,7 +88,7 @@ function downloadAsPic() {
         catch (err) {
             console.log(err.message);
         }
-        document.body.removeChild(canvas);
+        // document.body.removeChild(canvas);
     });
 }
 
