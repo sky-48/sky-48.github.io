@@ -5,9 +5,10 @@ function downloadAsPic() {
         let url = canvas.toDataURL();
         let link = document.createElement('a');
         link.href = url;
-        link.download = "atest.png";
+        link.download = "cover.png";
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
+        document.body.removeChild(canvas);
     });
 }
