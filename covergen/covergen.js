@@ -77,7 +77,8 @@ function downloadAsPic() {
     html2canvas(document.querySelector("#canvas_container")).then(canvas => {
         document.body.appendChild(canvas);
         try {
-            let url = canvas.toDataURL();
+            // let url = canvas.toDataURL();
+            let url = canvas.toDataURL('image/jpeg', 0.8);
             let link = document.createElement('a');
             link.href = url;
             link.download = "cover.png";
@@ -88,7 +89,7 @@ function downloadAsPic() {
         catch (err) {
             console.log(err.message);
         }
-        // document.body.removeChild(canvas);
+        document.body.removeChild(canvas);
     });
 }
 
