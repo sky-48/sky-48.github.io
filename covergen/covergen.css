@@ -7,7 +7,7 @@
   position: relative;
   width: 1146px;
   height: 717px;
-  background-image: url('backdrop-x.jpg');
+  background-image: url('backdrop-x-desk.jpg');
 }
 
 #title_text {
@@ -22,6 +22,7 @@
 .slot {
   position: absolute;
   cursor: move;
+  /* background: #b1d61b; */
   background-image: url('ip7case.png');
   background-size: contain;
 }
@@ -34,30 +35,53 @@
 
 .pic {
   /* border: 5px solid #a4bd3e */
+
   position: absolute;
   /* background: #adffd2; */
-  cursor: move
+  
+  width: 88%;
+  margin-left: 6%;
+  height: 76%;
+  margin-top: 24%;
+  
+  
+  cursor: move;
 }
 
 /* calendar dates  */
 
 #calendar-div {
-  background-color: lightblue;
-  width: 50px;
-  height: 50px;
-  transform: rotate(-10deg);
-  /* -webkit-transform: rotate(10deg); */
-  /* -moz-transform: rotate(10deg);
-  -ms-transform: rotate(10deg);
-  -o-transform: rotate(10deg); */
+  position: relative;
+  /* background-color: lightblue; */
+  margin: 10px;
+  width: 140px;
+  height: 180px;
+  transform: rotate(-9deg);
+  -webkit-transform: rotate(-9deg);
+  -moz-transform: rotate(-9deg);
+  -ms-transform: rotate(-9deg);
+  -o-transform: rotate(-9deg);
 }
 
 #calendar-date {
-  font-size: 200%;
+  position: absolute;
+  margin-left: 10px;
+  /* background: #666666; */
+  font-weight: bold;
+  margin-top: 20px;
+  width: 140px;
+  text-align: center;
+  font-size: 100px;
 }
 
 #calendar-month {
-  font-size: 150%;
+  position: absolute;
+  
+  width: 160px;
+  margin-top: 140px;
+  /* background: #ccc; */
+  text-align: center;
+  font-size: 32px;
 }
 
 /* drag to upload pics: */

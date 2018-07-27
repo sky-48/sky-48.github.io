@@ -29,37 +29,29 @@ function addSlot() {
 function updateLayout() {
     const can_w = 1146, can_h = 717; // canvas size is 1146 x 717
     let n = slots.length; // total number of slots
-    let slot_w = 200, slot_h = 400; // size and ratio of the slot
-    let w = 200, h = 355; // size of each slot, with ratio 16:9
+    let slot_w = 283, slot_h = 576; // size and ratio of the slot
 
-    if (n > 5) {
-        // e.g. the 6th slot will make everyone shrink 20% to make room
-        let shrink_factor = 1 + 0.2 * (n - 5);
-        w /= shrink_factor;
-        h /= shrink_factor;
+    let top_slot = 60;
+
+    if (n > 4) {
+        // e.g. the 5th slot will make everyone shrink 25% to make room
+        let shrink_factor = 1 + 0.25 * (n - 4);
         slot_w /= shrink_factor;
         slot_h /= shrink_factor;
     }
 
     // calculate spacing between each slot:
-    let margin = (can_w - w * n) / (n + 1);
+    let margin = (can_w - slot_w * n) / (n + 1);
 
     let left = 0; // running counter to keep track of the `left` property in css
-    let top_slot = 245;
+    
     for (let i in slots) {
         left += margin;
-        // adjust position of each pic::
-        pics[i].style.width = w - 10;
-        pics[i].style.height = h - 10;
-        pics[i].style.left = 5;
-        pics[i].style.top = 20;
-        // adjust position of each caption:
-        // slots[i].style.width = w;
         slots[i].style.width = slot_w;
         slots[i].style.height = slot_h;
         slots[i].style.left = left;
         slots[i].style.top = top_slot;
-        left += w;
+        left += slot_w;
     }
 }
 
@@ -75,7 +67,7 @@ function updateCalendar(date) {
     console.log(`input=${date} date=${date} year=${y} month=${m} date=${d}`);
 
     document.getElementById('calendar-date').innerHTML = d;
-    document.getElementById('calendar-month').innerHTML = m + y;
+    document.getElementById('calendar-month').innerHTML = `<b>${m.toUpperCase()}</b> ${y}`;
 
 }
 

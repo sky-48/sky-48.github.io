@@ -25,20 +25,23 @@
     </table>
 </div>
 
-<!-- text field & add button -->
-<input type="date" oninput="updateCalendar(this.value)" onchange="updateCalendar(this.value)">
-<!-- file upload and input names -->
-<div id='file_selection_container'></div>
+<!-- date selector -->
+<hr />
 
-<input type="button" value="+" style="font-size: 16px; width: 50px" onclick="addSlot()">
+<div>
+    <label for='calendar-selection'>Date: </label>
+    <input id='calendar-selection' type="date" oninput="updateCalendar(this.value)" onchange="updateCalendar(this.value)">
+</div>
+
+<!-- <input type="button" value="+" style="font-size: 16px; width: 50px" onclick="addSlot()"> -->
 
 <hr />
 
 <!-- canvas area: resolution should be 1146 x 717 -->
 <div id="canvas_container">
     <div id='calendar-div'>
-        <p id="calendar-date"></p>
-        <p id="calendar-month"></p>
+        <p id="calendar-date">X</p>
+        <p id="calendar-month">??? !!!!</p>
     </div>
 </div>
 <script src="drag_upload.js"></script>
