@@ -10,6 +10,7 @@ function addSlot() {
     let slot_tag = document.createElement('div');
     slot_tag.setAttribute('id', 'slot_' + sequence);
     slot_tag.setAttribute('class', 'slot');
+    slot_tag.setAttribute('crossorigin', 'anonymous');
     dragElement(slot_tag); // allow drag and drop to move the element around
     slots.push(slot_tag);
 
@@ -17,6 +18,7 @@ function addSlot() {
     pic_tag.setAttribute('id', 'pic_' + sequence);
     pic_tag.setAttribute('class', 'pic');
     pic_tag.setAttribute('alt', 'Pic #' + (sequence + 1));
+    pic_tag.setAttribute('crossorigin', 'anonymous');
     pics.push(pic_tag);
 
     let canvas_container = document.getElementById('canvas_container');
@@ -44,7 +46,7 @@ function updateLayout() {
     let margin = (can_w - slot_w * n) / (n + 1);
 
     let left = 0; // running counter to keep track of the `left` property in css
-    
+
     for (let i in slots) {
         left += margin;
         slots[i].style.width = slot_w;
@@ -69,6 +71,20 @@ function updateCalendar(date) {
     document.getElementById('calendar-date').innerHTML = d;
     document.getElementById('calendar-month').innerHTML = `<b>${m.toUpperCase()}</b> ${y}`;
 
+}
+
+function downloadAsPic() {
+    html2canvas(document.querySelector("#canvas_container")).then(canvas => {
+        document.body.appendChild(canvas);
+        console.log(canvas);
+        let url = canvas.toDataURL();
+        let link = document.createElement('a');
+        link.href = url;
+        link.download = "mytest.png";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    });
 }
 
 function getMemberNamesFromFileName(filename) { // converts file name (e.g. 'C:\fakepath\qj.png') to member name(s)
