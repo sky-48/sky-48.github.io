@@ -68,6 +68,17 @@ function addContent(content) { // called when each new file is uploaded
     pics[pics.length - 1].src = content;
 }
 
+function updateCalendar(date) {
+    const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    let [y, m, d] = date.split('-');
+    m = months[m - 1];
+    console.log(`input=${date} date=${date} year=${y} month=${m} date=${d}`);
+
+    document.getElementById('calendar-date').innerHTML = d;
+    document.getElementById('calendar-month').innerHTML = m + y;
+
+}
+
 function getMemberNamesFromFileName(filename) { // converts file name (e.g. 'C:\fakepath\qj.png') to member name(s)
     let filename_extension = filename.split(/(\\|\/)/g).pop(); // e.g.: "/usr/bin/pics.png" -> "pics.png"
     let abbr = filename_extension.replace(/\.[A-Za-z]+$/g, ''); // e.g.: "pics.png" -> "pics"

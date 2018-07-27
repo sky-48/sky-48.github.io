@@ -26,7 +26,7 @@
 </div>
 
 <!-- text field & add button -->
-<input type="date" oninput="setText('title_text', this.value)" onchange="setText('title_text', this.value)">
+<input type="date" oninput="updateCalendar(this.value)" onchange="updateCalendar(this.value)">
 <!-- file upload and input names -->
 <div id='file_selection_container'></div>
 
@@ -36,7 +36,10 @@
 
 <!-- canvas area: resolution should be 1146 x 717 -->
 <div id="canvas_container">
-    <p id="title_text"></p>
+    <div id='calendar-div'>
+        <p id="calendar-date"></p>
+        <p id="calendar-month"></p>
+    </div>
 </div>
 <script src="drag_upload.js"></script>
 

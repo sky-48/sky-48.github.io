@@ -1,4 +1,4 @@
-/* copied, with modifications, from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_draggable */
+/* Modified from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_draggable */
 
 function dragElement(elmnt) {
     elmnt.onmousedown = dragMouseDown;

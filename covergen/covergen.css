@@ -1,26 +1,29 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 #canvas_container {
-    /* resolution should be 1146 x 717 */
-    position: relative;
-    width: 1146px;
-    height: 717px;
-    background-image: url('backdrop-x.jpg');
+  /* resolution should be 1146 x 717 */
+  position: relative;
+  width: 1146px;
+  height: 717px;
+  background-image: url('backdrop-x.jpg');
 }
 
 #title_text {
-    color: #666666;
-    position: absolute;
-    font-size: 32px;
-    cursor: move;
-    left: 666px;
-    top: 155px;
+  color: #666666;
+  position: absolute;
+  font-size: 32px;
+  cursor: move;
+  left: 666px;
+  top: 155px;
 }
 
 .slot {
-    position: absolute;
-    cursor: move;
-    
-    background-image: url('ip7case.png');
-    background-size: contain;
+  position: absolute;
+  cursor: move;
+  background-image: url('ip7case.png');
+  background-size: contain;
 }
 
 /* .border {
@@ -30,8 +33,69 @@
 } */
 
 .pic {
-    /* border: 5px solid #a4bd3e */
-    position: absolute;
-    /* background: #adffd2; */
-    cursor: move
+  /* border: 5px solid #a4bd3e */
+  position: absolute;
+  /* background: #adffd2; */
+  cursor: move
+}
+
+/* calendar dates  */
+
+#calendar-div {
+  background-color: lightblue;
+  width: 50px;
+  height: 50px;
+  transform: rotate(-10deg);
+  /* -webkit-transform: rotate(10deg); */
+  /* -moz-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  -o-transform: rotate(10deg); */
+}
+
+#calendar-date {
+  font-size: 200%;
+}
+
+#calendar-month {
+  font-size: 150%;
+}
+
+/* drag to upload pics: */
+
+#drop-area {
+  border: 5px dashed #ccc;
+  border-radius: 20px;
+  width: 1096px;
+  padding: 20px;
+}
+
+#drop-area.highlight {
+  border-color: #b1d61b;
+}
+
+#gallery {
+  margin-left: 10px;
+}
+
+#gallery img {
+  height: 60px;
+  margin: 10px;
+  vertical-align: middle;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px;
+  background: #ccc;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.button:hover {
+  background: #b1d61b;
+}
+
+#file-selector-hidden {
+  display: none;
 }
