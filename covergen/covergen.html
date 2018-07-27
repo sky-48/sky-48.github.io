@@ -7,10 +7,12 @@
     <script src="drag_element.js"></script>
     <script src="html2canvas.min.js"></script>
     <link rel="stylesheet" href="covergen.css">
+    <link rel="stylesheet" href="datepicker.css">
 </head>
 
-<h3>Cover Gen v0.2</h3>
+<h3>Cover Gen v0.3</h3>
 
+<!-- "drag and drop to upload" area  -->
 <div id="drop-area">
     <table>
         <tr>
@@ -25,6 +27,7 @@
         </tr>
     </table>
 </div>
+<script src="drag_upload.js"></script>
 
 <!-- date selector -->
 <hr />
@@ -33,6 +36,16 @@
     <label for='calendar-selection'>Date: </label>
     <input id='calendar-selection' type="date" oninput="updateCalendar(this.value)" onchange="updateCalendar(this.value)">
 </div>
+
+<label for='calendar-selector'>Date: </label>
+<input id="calendar-selector" value="" onchange='updateCalendar(this.value)' />
+<script src="datepicker.js"></script>
+<script>
+    let picker = datepicker(document.getElementById('calendar-selector'));
+</script>
+
+
+<!-- add button (for debugging) & save button  -->
 
 <input type="button" value="+" style="font-size: 16px; width: 50px" onclick="addSlot()">
 <input type="button" value="Save" style="font-size: 16px; width: 50px" onclick="downloadAsPic()">
@@ -46,7 +59,5 @@
         <p id="calendar-month"></p>
     </div>
 </div>
-
-<script src="drag_upload.js"></script>
 
 </html>
