@@ -5,7 +5,6 @@
     <script src="data.js"></script>
     <script src="covergen.js"></script>
     <script src="drag_element.js"></script>
-    <script src="html2canvas.min.js"></script>
     <link rel="stylesheet" href="covergen.css">
 </head>
 
@@ -34,22 +33,16 @@
     <input id='calendar-selection' type="date" oninput="updateCalendar(this.value)" onchange="updateCalendar(this.value)">
 </div>
 
-<input type="button" value="+" style="font-size: 16px; width: 50px" onclick="addSlot()">
-<input type="button" value="Save" style="font-size: 16px; width: 50px" onclick="downloadAsPic()">
+<!-- <input type="button" value="+" style="font-size: 16px; width: 50px" onclick="addSlot()"> -->
 
 <hr />
 
 <!-- canvas area: resolution should be 1146 x 717 -->
-<div id="canvas_container2">
+<div id="canvas_container">
     <div id='calendar-div'>
-        <p id="calendar-date"></p>
-        <p id="calendar-month"></p>
+        <p id="calendar-date">X</p>
+        <p id="calendar-month">??? !!!!</p>
     </div>
-</div>
-
-<div id='canvas_container' style="width: 50px; height: 20px;" crossorigin="anonymous"> 
-  <p>test canvas</p>
-
 </div>
 <script src="drag_upload.js"></script>
 
