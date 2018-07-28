@@ -7,7 +7,7 @@
   position: relative;
   width: 1146px;
   height: 717px;
-  background-image: url('backdrop-x-desk.jpg');
+  background-image: url('backdrop-x.jpg');
 }
 
 #title_text {
@@ -35,16 +35,35 @@
 
 .pic {
   /* border: 5px solid #a4bd3e */
-
   position: absolute;
   /* background: #adffd2; */
-  
   width: 88%;
   margin-left: 6%;
   height: 76%;
   margin-top: 24%;
-  
-  
+  cursor: move;
+}
+
+/* desktop decorations  */
+
+#decor-coffee {
+  position: absolute;
+  top: -20px;
+  left: 866px;
+  cursor: move;
+}
+
+#decor-pen {
+  position: absolute;
+  top: 129px;
+  left: 1004px;
+  cursor: move;
+}
+
+#decor-pencil {
+  position: absolute;
+  top: 45px;
+  left: 1058px;
   cursor: move;
 }
 
@@ -76,7 +95,6 @@
 
 #calendar-month {
   position: absolute;
-  
   width: 160px;
   margin-top: 140px;
   /* background: #ccc; */
