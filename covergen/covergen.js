@@ -37,7 +37,6 @@ function bringToFront(seq) {
     seq.style.zIndex = ++zIndexCounter;
 }
 
-// m = ""; for (let i in slots) { m += i + ":"; m += slots[i].style.left + ","; m += slots[i].style.top + ";" }
 function updateLayout() {
     const can_w = 1146, can_h = 717; // canvas size is 1146 x 717
     let n = slots.length; // total number of slots
@@ -73,7 +72,6 @@ function updateLayout() {
             slots[i].style.height = slot_h;
             let left = presets[slots.length][i][0];
             let top = presets[slots.length][i][1];
-            console.log("left=" + left + ", top=" + top);
             slots[i].style.left = left;
             slots[i].style.top = top;
         }
@@ -95,6 +93,18 @@ function updateLayout() {
             left += slot_w;
         }
     }
+}
+
+function printOffsets() {
+    let m = "[";
+    for (let i in slots) {
+        m += "[";
+        m += slots[i].style.left + ",";
+        m += slots[i].style.top + "],"
+    };
+    m += "]";
+    m = m.replace(/px/g, '');
+    console.log(m);
 }
 
 function addContent(content) { // called when each new file is uploaded
