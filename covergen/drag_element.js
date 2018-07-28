@@ -6,6 +6,7 @@ function dragElement(elmnt) {
     let x, y;
 
     function dragMouseDown(e) {
+        bringToFront(e.target); // function defined in covergen.js
         e = e || window.event;
         e.preventDefault();
         // get the mouse cursor position at startup:

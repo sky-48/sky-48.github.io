@@ -1,4 +1,5 @@
 let slots = [], pics = []; // global array holding profile pics and their backdrops for each slot, used for dynamic size and layout adjustments
+let zIndexCounter = 10000; // keep track of assigned z-index: each user click will bring the object to front, with an higher z-index
 
 function addSlot() {
     let sequence = slots.length;
@@ -19,6 +20,7 @@ function addSlot() {
     pic_tag.setAttribute('class', 'pic');
     pic_tag.setAttribute('alt', 'Pic #' + (sequence + 1));
     pic_tag.setAttribute('crossorigin', 'anonymous');
+    pic_tag.setAttribute('onmousedown', 'bringToFront(' + sequence + ')')
     pics.push(pic_tag);
 
     let canvas_container = document.getElementById('canvas_container');
@@ -28,6 +30,13 @@ function addSlot() {
     updateLayout();
 }
 
+function bringToFront(seq) {
+    if (slots[seq]) { // input could either be a seq number or the slot object
+        seq = slots[seq];
+    }
+    seq.style.zIndex = ++zIndexCounter;
+}
+
 function updateLayout() {
     const can_w = 1146, can_h = 717; // canvas size is 1146 x 717
     let n = slots.length; // total number of slots
@@ -35,17 +44,19 @@ function updateLayout() {
 
     let top_slot = 60;
 
-    if (n > 4) {
-        // e.g. the 5th slot will make everyone shrink 25% to make room
-        let shrink_factor = 1 + 0.25 * (n - 4);
+    if (n > 2) {
+        // additional slots will make everyone shrink to make room
+        let shrink_factor = 1 + 0.15 * (n - 2);
         slot_w /= shrink_factor;
         slot_h /= shrink_factor;
     }
 
     // calculate spacing between each slot:
-    let margin = (can_w - slot_w * n) / (n + 1);
+    let margin_left = 180;
+    let margin_right = 220;
+    let margin = (can_w - margin_left - margin_right - slot_w * n) / (n + 1);
 
-    let left = 0; // running counter to keep track of the `left` property in css
+    let left = margin_left; // running counter to keep track of the `left` property in css
 
     for (let i in slots) {
         left += margin;
