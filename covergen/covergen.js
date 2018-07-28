@@ -37,6 +37,7 @@ function bringToFront(seq) {
     seq.style.zIndex = ++zIndexCounter;
 }
 
+// m = ""; for (let i in slots) { m += i + ":"; m += slots[i].style.left + ","; m += slots[i].style.top + ";" }
 function updateLayout() {
     const can_w = 1146, can_h = 717; // canvas size is 1146 x 717
     let n = slots.length; // total number of slots
@@ -44,27 +45,55 @@ function updateLayout() {
 
     let top_slot = 60;
 
+
     if (n > 2) {
-        // additional slots will make everyone shrink to make room
-        let shrink_factor = 1 + 0.15 * (n - 2);
+        // additional slots will make everyone shrink to make room,
+        // but stops shrinking after 7 slots
+        let shrink_factor = 1 + 0.15 * (Math.min(n, 7) - 2);
         slot_w /= shrink_factor;
         slot_h /= shrink_factor;
     }
 
-    // calculate spacing between each slot:
-    let margin_left = 180;
-    let margin_right = 220;
-    let margin = (can_w - margin_left - margin_right - slot_w * n) / (n + 1);
 
-    let left = margin_left; // running counter to keep track of the `left` property in css
+    const presets = [
+        [[]],
+        [[414, 40],],
+        [[240, 40], [583, 40],],
+        [[133, 178], [447, 56], [758, 169],],
+        [[70, 221], [318, 111], [567, 51], [809, 222],],
+        [[39, 264], [245, 88], [460, 209], [667, 111], [877, 285],],
+        [[20, 331], [203, 83], [386, 247], [565, 41], [747, 241], [935, 341],],
+        [[20, 247], [197, 367], [250, 15], [433, 195], [604, 45], [780, 187], [961, 356],],
+        [[265, 376], [467, 13], [270, 13], [681, 12], [476, 374], [683, 373], [66, 232], [881, 238],],
+    ];
 
-    for (let i in slots) {
-        left += margin;
-        slots[i].style.width = slot_w;
-        slots[i].style.height = slot_h;
-        slots[i].style.left = left;
-        slots[i].style.top = top_slot;
-        left += slot_w;
+    if (slots.length <= 8) { // predefined:
+        for (let i in slots) {
+            slots[i].style.width = slot_w;
+            slots[i].style.height = slot_h;
+            let left = presets[slots.length][i][0];
+            let top = presets[slots.length][i][1];
+            console.log("left=" + left + ", top=" + top);
+            slots[i].style.left = left;
+            slots[i].style.top = top;
+        }
+    }
+    else { // auto generated:
+        // calculate spacing between each slot:
+        let margin_left = 180;
+        let margin_right = 220;
+        let margin = (can_w - margin_left - margin_right - slot_w * n) / (n + 1);
+
+        let left = margin_left; // running counter to keep track of the `left` property in css
+
+        for (let i in slots) {
+            left += margin;
+            slots[i].style.width = slot_w;
+            slots[i].style.height = slot_h;
+            slots[i].style.left = left;
+            slots[i].style.top = top_slot;
+            left += slot_w;
+        }
     }
 }
 
