@@ -20,7 +20,7 @@ function addSlot() {
     pic_tag.setAttribute('class', 'pic');
     pic_tag.setAttribute('alt', 'Pic #' + (sequence + 1));
     pic_tag.setAttribute('crossorigin', 'anonymous');
-    pic_tag.setAttribute('onmousedown', 'bringToFront(' + sequence + ')')
+    pic_tag.setAttribute('onmousedown', 'bringToFront(' + sequence + ')');
     pics.push(pic_tag);
 
     let canvas_container = document.getElementById('canvas_container');
@@ -55,54 +55,111 @@ function updateLayout() {
 
 
     const presets = [
-        [[]],
-        [[414, 40],],
-        [[240, 40], [583, 40],],
-        [[133, 178], [447, 56], [758, 169],],
-        [[70, 221], [318, 111], [567, 51], [809, 222],],
-        [[39, 264], [245, 88], [460, 209], [667, 111], [877, 285],],
-        [[20, 331], [203, 83], [386, 247], [565, 41], [747, 241], [935, 341],],
-        [[20, 247], [197, 367], [250, 15], [433, 195], [604, 45], [780, 187], [961, 356],],
-        [[265, 376], [467, 13], [270, 13], [681, 12], [476, 374], [683, 373], [66, 232], [881, 238],],
+        [[]], // 0
+        [[414, 40],
+        { 'decor-coffee': [812, 15,], 'decor-pen': [1016, 179,], 'decor-pencil': [1040, 47,], }], // 1
+        [[240, 40], [583, 40],
+        { 'decor-coffee': [887, 20,], 'decor-pen': [1020, 170,], 'decor-pencil': [1053, 26,], }], // 2
+        [[133, 178], [447, 56], [758, 169],
+        { 'decor-coffee': [873, -31,], 'decor-pen': [1017, 158,], 'decor-pencil': [1043, 41,], }], // 3
+        [[70, 221], [318, 111], [567, 51], [809, 222],
+        { 'decor-coffee': [827, 14,], 'decor-pen': [1011, 153,], 'decor-pencil': [1038, 21,], }], // 4
+        [[39, 264], [245, 88], [460, 209], [667, 111], [877, 285],
+        { 'decor-coffee': [855, -34,], 'decor-pen': [1014, 116,], 'decor-pencil': [1043, 14,], }], // 5
+        [[20, 331], [203, 83], [386, 247], [565, 41], [747, 241], [935, 341],
+        { 'decor-coffee': [821, 27,], 'decor-pen': [990, 117,], 'decor-pencil': [1031, 29,], }], //6
+        [[20, 247], [197, 367], [250, 15], [433, 195], [604, 45], [780, 187], [961, 356],
+        { 'decor-coffee': [819, 12,], 'decor-pen': [983, 120,], 'decor-pencil': [1034, 29,], }], //7
+        [[270, 375], [470, 14], [270, 14], [680, 14], [470, 375], [680, 375], [65, 233], [880, 233],
+        { 'decor-coffee': [882, -30,], 'decor-pen': [1019, 135,], 'decor-pencil': [1047, 39,], }], //8
+        [[219.829, 25], [401.371, 25], [582.914, 25], [764.457, 25], [56.2381, 365], [274.19, 365], [492.143, 365], [710.095, 365], [928.048, 365],
+        { 'decor-coffee': [1037, 30,], 'decor-pen': [953, 104,], 'decor-pencil': [1008, 108,], }], //9
+        [[206.238, 25], [374.19, 25], [542.143, 25], [710.095, 25], [878.048, 25], [56.2381, 365], [274.19, 365], [492.143, 365], [710.095, 365], [928.048, 365],
+        { 'decor-coffee': [1067, 62,], 'decor-pen': [1089, 258,], 'decor-pencil': [1119, 234,], }], //10
     ];
 
-    if (slots.length <= 8) { // predefined:
-        for (let i in slots) {
+    if (n < presets.length) { // predefined positions:
+        for (let i in slots) { // the first i elements are [left, top] properties each slot:
             slots[i].style.width = slot_w;
             slots[i].style.height = slot_h;
-            let left = presets[slots.length][i][0];
-            let top = presets[slots.length][i][1];
+            let left = presets[n][i][0];
+            let top = presets[n][i][1];
             slots[i].style.left = left;
             slots[i].style.top = top;
         }
+        if (presets[n][slots.length]) { // the last element is for decoration objects:
+            let decors = presets[n][slots.length];
+            Object.keys(decors).forEach(el => {
+                document.getElementById(el).style.left = decors[el][0];
+                document.getElementById(el).style.top = decors[el][1];
+            });
+        }
     }
-    else { // auto generated:
-        // calculate spacing between each slot:
-        let margin_left = 180;
-        let margin_right = 220;
-        let margin = (can_w - margin_left - margin_right - slot_w * n) / (n + 1);
+    else { // auto generate positions, *working in progress*:
+
+        let n1 = Math.floor(n / 2); // number of slots on first row
+        let n2 = n - n1; // number of slots on the second row
+
+        if (n > 13) {
+            // additional slots will make everyone shrink to make room,
+            let shrink_factor = 1 + 0.10 * (n - 13);
+            slot_w /= shrink_factor;
+            slot_h /= shrink_factor;
+        }
+
+        let margin_left = 200; // avoid the calendar
+        let margin_right = 100;
+        let margin = (can_w - margin_left - margin_right - slot_w * n1) / (n1 + 1);
 
         let left = margin_left; // running counter to keep track of the `left` property in css
+        let top = 25; // offsets for `top` property
 
-        for (let i in slots) {
+        console.log('margin for row1 = ' + margin);
+        for (let i = 0; i < n1; i++) {
             left += margin;
             slots[i].style.width = slot_w;
             slots[i].style.height = slot_h;
             slots[i].style.left = left;
-            slots[i].style.top = top_slot;
+            slots[i].style.top = top;
+            left += slot_w;
+        }
+
+        // second row:
+        margin = (can_w - slot_w * n2) / (n2 + 1);
+        left = 0;
+        top = 365;
+        console.log('margin for row2 = ' + margin);
+
+        for (let i = n1; i < n; i++) {
+            left += margin;
+            slots[i].style.width = slot_w;
+            slots[i].style.height = slot_h;
+            slots[i].style.left = left;
+            slots[i].style.top = top;
             left += slot_w;
         }
     }
 }
 
-function printOffsets() {
+function printPositions() {
     let m = "[";
     for (let i in slots) {
         m += "[";
         m += slots[i].style.left + ",";
         m += slots[i].style.top + "],"
     };
-    m += "]";
+
+    m += '{';
+    ['decor-coffee', 'decor-pen', 'decor-pencil'].forEach((el) => {
+        m += "'" + el + "':[";
+        ['left', 'top'].forEach((property) => {
+            let value = document.getElementById(el).style[property];
+            m += value + ',';
+        });
+        m += '],'
+    });
+    m += '}], //';
+    m += slots.length;
     m = m.replace(/px/g, '');
     console.log(m);
 }
@@ -124,6 +181,9 @@ function updateCalendar(date) {
 }
 
 function downloadAsPic() {
+    if (!document.getElementById('calendar-date').innerHTML) {
+        alert('Date is not set.');
+    }
     html2canvas(document.querySelector("#canvas_container")).then(canvas => {
         try {
             document.body.appendChild(canvas);
