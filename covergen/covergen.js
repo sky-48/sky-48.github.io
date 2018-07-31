@@ -178,11 +178,33 @@ function updateCalendar(date) {
     document.getElementById('calendar-date').innerHTML = d;
     document.getElementById('calendar-month').innerHTML = `<b>${m.toUpperCase()}</b> ${y}`;
 
+    updateSuggestions();
+}
+
+function updateSuggestions() {
+    let abbrs = document.getElementById('members-abbr').value;
+    let members = getMemberNamesFromFileName(abbrs);
+    let el_title = document.getElementById('suggestion-title');
+    let el_summary = document.getElementById('suggestion-summary');
+
+    let date = document.getElementById('calendar-selection').value || '#日期还没选#';
+    let template_title = `【SNH48】Team X ${date} 口袋48（电台）直播 【${members}】`;
+    let template_summary = `口袋48
+#SNH48-Team X#
+【直播成员】${members}
+2016年Team X队成员口袋48直播合辑【传送门：av6425941】
+2017年Team X队成员口袋48直播合辑【传送门：av6732203】
+更多相关内容欢迎加入TeamX应援群370882358
+欢迎关注B站@SNH48-TeamX应援会，微博@SNH48-TeamX-应援会。`;
+    el_title.value = template_title;
+    el_summary.value = template_summary;
 }
 
 function downloadAsPic() {
     if (!document.getElementById('calendar-date').innerHTML) {
-        alert('Date is not set.');
+        if (!confirm('日期还没选择，就要下载吗？（日期格式例如：2018-07-28）')) {
+            return;
+        }
     }
     html2canvas(document.querySelector("#canvas_container")).then(canvas => {
         try {

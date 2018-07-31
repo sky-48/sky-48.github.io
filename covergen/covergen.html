@@ -10,16 +10,16 @@
     <link rel="stylesheet" href="datepicker.css">
 </head>
 
-<h3>Cover Gen v0.3</h3>
+<h3>投稿封面生成工具 v0.4</h3>
 
 <!-- "drag and drop to upload" area  -->
 <div id="drop-area">
     <table>
         <tr>
             <td>
-                <p>drop files here</p>
+                <p>拖拽图片到这里（可多选）</p>
                 <input type="file" id="file-selector-hidden" multiple accept="image/*" onchange="handleFiles(this.files)">
-                <label class="button" for="file-selector-hidden">Browse</label>
+                <label class="button" for="file-selector-hidden">或选择文件</label>
             </td>
             <td>
                 <div id="gallery" />
@@ -31,27 +31,43 @@
 
 <!-- date selector -->
 <hr />
-
+<h4>如何使用？简单三步：1. 上传图片；2. 选择日期；3. 输入成员名。</h4>
 <div>
-    <label for='calendar-selection'>Date: </label>
+    <label for='calendar-selection'>直播日期：</label>
     <input id='calendar-selection' type="date" oninput="updateCalendar(this.value)" onchange="updateCalendar(this.value)">
 </div>
 
+<div>
+    <label for='calendar-selection'>成员缩写：</label>
+    <input id='members-abbr' type="input" placeholder="sxr zds yby" oninput="updateSuggestions()" onchange="updateSuggestions()">
+</div>
+
+<div>
+    <label for='calendar-selection'>建议标题：</label>
+    <textarea id="suggestion-title" cols="40" rows="5">在上面输入成员名或缩写 自动生成投稿标题</textarea>
+</div>
+
+<div>
+    <label for='suggestion-summary'>建议简介：</label>
+    <textarea id="suggestion-summary" cols="40" rows="5">在上面输入成员名或缩写 自动生成投稿简介</textarea>
+</div>
+<!--
 <label for='calendar-selector'>Date: </label>
 <input id="calendar-selector" value="" onchange='updateCalendar(this.value)' />
 <script src="datepicker.js"></script>
 <script>
     let picker = datepicker(document.getElementById('calendar-selector'));
 </script>
+-->
 
 
 <!-- add button (for debugging) & save button  -->
 
-<input type="button" value="+" style="font-size: 16px; width: 50px" onclick="addSlot()">
-<input type="button" value="Save" style="font-size: 16px; width: 50px" onclick="downloadAsPic()">
-
+<!-- <input type="button" value="+" style="font-size: 16px; width: 50px" onclick="addSlot()"> -->
 <hr />
 
+<h4>封面预览（可拖动物件调整位置，满意后即可“下载”）：</h4>
+<input type="button" value="下载封面图片" style="font-size: 16px" onclick="downloadAsPic()">
 <!-- canvas area: resolution should be 1146 x 717 -->
 <div id="canvas_container">
     <div id='calendar-div'>
