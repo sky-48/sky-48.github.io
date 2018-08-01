@@ -18,7 +18,7 @@ function addSlot() {
     let pic_tag = document.createElement('img');
     pic_tag.setAttribute('id', 'pic_' + sequence);
     pic_tag.setAttribute('class', 'pic');
-    pic_tag.setAttribute('alt', 'Pic #' + (sequence + 1));
+    // pic_tag.setAttribute('alt', 'Pic #' + (sequence + 1));
     pic_tag.setAttribute('crossorigin', 'anonymous');
     pic_tag.setAttribute('onmousedown', 'bringToFront(' + sequence + ')');
     pics.push(pic_tag);
@@ -166,7 +166,11 @@ function printPositions() {
 
 function addContent(content) { // called when each new file is uploaded
     addSlot();
-    pics[pics.length - 1].src = content;
+    // pics[pics.length - 1].src = content;
+    let s = pics[pics.length - 1].style;
+    s.background = 'url(' + content + ')';
+    s.backgroundSize = 'cover';
+    s.backgroundPosition = 'center';    
 }
 
 function updateCalendar(date) {
