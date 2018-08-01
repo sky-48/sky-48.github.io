@@ -170,7 +170,7 @@ function addContent(content) { // called when each new file is uploaded
     let s = pics[pics.length - 1].style;
     s.background = 'url(' + content + ')';
     s.backgroundSize = 'cover';
-    s.backgroundPosition = 'center';    
+    s.backgroundPosition = 'center';
 }
 
 function updateCalendar(date) {

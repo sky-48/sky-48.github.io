@@ -1,5 +1,5 @@
 * {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, "Microsoft Yahei", "微软雅黑", STXihei, "华文细黑", sans-serif;
 }
 
 #canvas_container {
@@ -22,21 +22,13 @@
 .slot {
   position: absolute;
   cursor: move;
-  /* background: #b1d61b; */
   background-image: url('ip7case.png');
+  background-repeat: no-repeat;
   background-size: contain;
 }
 
-/* .border {
-    position: absolute;
-    width: 210px;
-    cursor: move
-} */
-
 .pic {
-  /* border: 5px solid #a4bd3e */
   position: absolute;
-  /* background: #adffd2; */
   width: 88%;
   margin-left: 6%;
   height: 76%;
@@ -67,7 +59,7 @@
   cursor: move;
 }
 
-/* calendar dates  */
+/* desktop calendar  */
 
 #calendar-div {
   position: relative;
