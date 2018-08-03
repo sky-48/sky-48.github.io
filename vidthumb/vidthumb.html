@@ -9,7 +9,7 @@
 
     <button onclick='go()'>go</button>
 
-    <input type="file" id="file-to-upload" accept="video/*" onchange="loadVideo()" />
+    <input type="file" id="file-to-upload" accept="video/*" />
 
     <video id="video-player" controls>
         <source>
@@ -18,6 +18,8 @@
     <canvas id="video-canvas"></canvas>
 
     <div id="preview-container"></div>
+
+    <div id="hidden-container"></div>
 
     <script src="vidthumb.js"></script>
 </body>
