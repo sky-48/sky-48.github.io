@@ -1,0 +1,13 @@
+#video-player {
+    /* display: none; */
+    max-width: 40px;
+}
+
+#video-canvas {
+    background-color: #b1d61b;
+    /* display: none; */
+}
+
+#preview-container {
+    background-color: #b1d61b;
+}
