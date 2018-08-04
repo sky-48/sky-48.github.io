@@ -1,36 +1,25 @@
 let video_canvas = document.getElementById('video-canvas');
+const total_slots = 6;
 
+let x;
 function go() {
-    console.log('going');
+    Promise.all(
+        [initVideo('file1'), initVideo('file2'), initVideo('file3'), initVideo('file4')]
+    ).then((vplayers) => {
+        x = vplayers;
+        let total_duration = vplayers.reduce((accum, vplayer) => accum += vplayer.duration, 0);
+        console.log('Total %d video(s) found, total duration: %ds.', vplayers.length, total_duration);
 
-    initVideo().then((vplayer) => {
-        console.log('Total video length: %ds', vplayer.duration);
-        return seekTo(vplayer, 3); // seek to 3 seconds
-    }).then((vplayer) => {
-        console.log('Video is now paused at the requested time.');
-        //generate thumbnail URL data
-        video_canvas.width = vplayer.videoWidth / 2;
-        video_canvas.height = vplayer.videoHeight / 2;
-
-        let context = video_canvas.getContext('2d');
-        context.drawImage(vplayer, 0, 0, vplayer.videoWidth / 2, vplayer.videoHeight / 2);
-        let data = video_canvas.toDataURL();
-        //create img
-        let img = document.createElement('img');
-        img.setAttribute('src', data);
-        //append img in container div
-        document.getElementById('preview-container').appendChild(img);
+        vplayers.forEach(vplayer => seekTo(vplayer, 3).then(addFrame));
     });
-
-    console.log('gone');
 }
 
-function initVideo() {
+function initVideo(inputElementId) {
     return new Promise((resolve, reject) => {
         let video_player = document.createElement('video');
-        document.getElementById('hidden-container').appendChild(video_player); // debug use
+        // document.getElementById('hidden-container').appendChild(video_player); // debug use
         // load the file to video-player:
-        let src = URL.createObjectURL(document.querySelector('#file-to-upload').files[0]);
+        let src = URL.createObjectURL(document.getElementById(inputElementId).files[0]);
         video_player.setAttribute('src', src);
         video_player.load();
 
@@ -43,10 +32,27 @@ function initVideo() {
 
 function seekTo(vplayer, second) {
     return new Promise((resolve, reject) => {
-        console.log('Promised to seek to %ds.' + second);
+        console.log('Promised to extract %d frame(s).', second);
         vplayer.currentTime = second;
         vplayer.addEventListener('seeked', () => {
             resolve(vplayer);
         });
     });
+}
+
+function addFrame(vplayer) {
+    console.log('Adding requested frame to preview.');
+    //generate thumbnail URL data
+    video_canvas.width = vplayer.videoWidth / 2;
+    video_canvas.height = vplayer.videoHeight / 2;
+
+    let context = video_canvas.getContext('2d');
+    context.drawImage(vplayer, 0, 0, vplayer.videoWidth / 2, vplayer.videoHeight / 2);
+    let data = video_canvas.toDataURL();
+    //create img
+    let img = document.createElement('img');
+    img.setAttribute('src', data);
+    //append img in container div
+    document.getElementById('preview-container').appendChild(img);
+    console.log('Frame added.');
 }
