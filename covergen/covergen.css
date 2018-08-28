@@ -96,14 +96,14 @@
 
 /* drag to upload pics: */
 
-#drop-area {
+.dashed-box {
   border: 5px dashed #ccc;
   border-radius: 20px;
   width: 1096px;
   padding: 20px;
 }
 
-#drop-area.highlight {
+.dashed-box.highlight {
   border-color: #b1d61b;
 }
 
