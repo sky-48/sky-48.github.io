@@ -173,6 +173,17 @@ function addContent(content) { // called when each new file is uploaded
     s.backgroundPosition = 'center';
 }
 
+function autoFillDate() {
+    let date = new Date(); // get today
+    date.setHours(-24); // minus one day
+    date.setMinutes(date.getMinutes() - date.getTimezoneOffset()); // correct for time zone
+    let yesterday = date.toISOString().slice(0, 10); // get yyyy-MM-dd format
+
+    let date_selector = document.getElementById('calendar-selection');
+    date_selector.value = yesterday;
+    updateCalendar(yesterday);
+}
+
 function updateCalendar(date) {
     const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
     let [y, m, d] = date.split('-');
@@ -182,7 +193,7 @@ function updateCalendar(date) {
     document.getElementById('calendar-date').innerHTML = d;
     document.getElementById('calendar-month').innerHTML = `<b>${m.toUpperCase()}</b> ${y}`;
 
-    updateSuggestions();
+    // updateSuggestions();
 }
 
 function updateSuggestions() {
