@@ -20,9 +20,9 @@ function go() {
         console.log('Total %d video(s) found, total duration: %ds.', vplayers.length, total_duration);
 
         vplayers.forEach(vplayer => {
-            job_queue.push({ 'vplayer': vplayer, 'time': 1 });
-            job_queue.push({ 'vplayer': vplayer, 'time': 2 });
-            job_queue.push({ 'vplayer': vplayer, 'time': 3 });
+            job_queue.push({ 'vplayer': vplayer, 'time': 1.1 });
+            job_queue.push({ 'vplayer': vplayer, 'time': 1.2 });
+            job_queue.push({ 'vplayer': vplayer, 'time': 1.3 });
         });
 
         console.log('Total %d job(s) queued.', job_queue.length);
@@ -33,7 +33,7 @@ function dispatch() {
     let job = job_queue.shift();
     if (job) {
         console.log('Dispatching job: seek to %ds.', job['time']);
-        seekTo(job['vplayer'], job['time']).then(addFrame).then(dispatch);
+        seekTo(job['vplayer'], job['time']).then(vplayer => addFrame(vplayer)).then(dispatch);
     }
 }
 
@@ -44,6 +44,7 @@ function initVideo(file) {
         // document.getElementById('hidden-container').appendChild(video_player); // debug use
         // load the file to video-player:
         video_player.setAttribute('src', URL.createObjectURL(file));
+        // video_player.setAttribute('src', 'test.mp4');
         video_player.load();
         // Load metadata of the video to get video duration and dimensions
         video_player.addEventListener('loadedmetadata', function () {
@@ -63,19 +64,34 @@ function seekTo(vplayer, second) {
     });
 }
 
+
+
 function addFrame(vplayer) {
     console.log('Adding requested frame to preview.');
     //generate thumbnail URL data
-    video_canvas.width = vplayer.videoWidth / 2;
-    video_canvas.height = vplayer.videoHeight / 2;
+    // video_canvas.width = vplayer.videoWidth / 2;
+    // video_canvas.height = vplayer.videoHeight / 2;
+
+    let h = 200;
+    let w = h / vplayer.videoHeight * vplayer.videoWidth;
 
     let context = video_canvas.getContext('2d');
-    context.drawImage(vplayer, 0, 0, vplayer.videoWidth / 2, vplayer.videoHeight / 2);
+    context.save();
+    context.rotate(Math.PI / 4);
+    context.drawImage(vplayer, 0, -80, w, h);
+    context.fillRect(0+w, -80, 10, h);
+    context.drawImage(vplayer, 0+w+10, -80, w, h);
+    context.fillRect(0+w+10+w, -80, 10, h);
+    context.drawImage(vplayer, 0+w+10+w+10, -80, w, h);
+    // context.drawImage(vplayer, 240, -80, 90, 160);
+    context.restore();
+    /*
     let data = video_canvas.toDataURL();
     //create img
     let img = document.createElement('img');
     img.setAttribute('src', data);
     //append img in container div
     document.getElementById('preview-container').appendChild(img);
+    */
     console.log('Frame added.');
 }
