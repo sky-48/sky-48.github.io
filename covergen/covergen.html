@@ -2,11 +2,12 @@
 
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="covergen.css">
     <script src="data.js"></script>
     <script src="covergen.js"></script>
     <script src="drag_element.js"></script>
     <script src="html2canvas.min.js"></script>
-    <link rel="stylesheet" href="covergen.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111356487-1"></script>
     <!-- <link rel="stylesheet" href="datepicker.css"> -->
 </head>
 
@@ -22,7 +23,7 @@
                 <input type="file" id="file-selector-hidden" multiple accept="image/*" onchange="handleFiles(this.files)">
             </td>
             <td>
-                <div id="gallery" > </div>
+                <div id="gallery"> </div>
             </td>
         </tr>
     </table>
@@ -32,7 +33,7 @@
 <!-- date selector -->
 <br />
 <div class="dashed-box">
-    <label for='calendar-selection' class="button" onclick="autoFillDate()">2. 选择日期</label> 
+    <label for='calendar-selection' class="button" onclick="autoFillDate()">2. 选择日期</label>
     <br> <br>
     <input id='calendar-selection' type="date" oninput="updateCalendar(this.value)" onchange="updateCalendar(this.value)">
 </div>
