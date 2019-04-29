@@ -7,13 +7,16 @@ const API_END_POINTS = [
   { name: "GNZ48", url: "http://h5.snh48.com/resource/jsonp/members.php?gid=30" },
   { name: "SHY48", url: "http://h5.snh48.com/resource/jsonp/members.php?gid=40" },
   { name: "CKG48", url: "http://h5.snh48.com/resource/jsonp/members.php?gid=50" },
+  { name: "IDFT", url: "http://h5.snh48.com/resource/jsonp/members.php?gid=70" },
 ]
 
 const members = [];
 
 Promise.all(API_END_POINTS.map(getMembers))
   .then(() => {
-    console.log(`We found ${members.length} members in total.`)
+    console.log(`Download complete. New members will not be processed.`);
+    console.log(`We found ${members.length} members in total.`);
+    members.sort((a, b) => a.abbr > b.abbr ? 1 : -1);
     return members.map(m => {
       // return `${m.sname} (${m.abbr}) - ${m.pname}: Team ${m.tname}`
       const o = {}
@@ -25,7 +28,9 @@ Promise.all(API_END_POINTS.map(getMembers))
     });
   })
   .then((data) => {
-    fs.writeFile("./output.json", JSON.stringify({ time: Date.now(), data: data }), (err) => {
+    output = JSON.stringify({ "last-update": Date.now(), data: data });
+    output = output.replace("[", "[\n").replace(/\},/g, "},\n").replace(/idft/g, "IDFT");
+    fs.writeFile("./output.json", output, (err) => {
       console.log(`Saving to file ${err ? 'failed' : 'successful'}.`)
     });
   })
@@ -48,7 +53,9 @@ function getMembers({ name, url }) {
           console.log(`Added ${result.rows.length} members in ${name}.`);
           resolve();
         } catch (err) {
-          reject(err);
+          console.log(`Failed when parsing JSON for ${name} because ${err}, retrying...`);
+          resolve();
+          return getMembers({ name, url });
         }
       });
     }).on('error', (err) => {
