@@ -12,10 +12,9 @@ const API_END_POINTS = [
 
 const members = [];
 
-Promise.all(API_END_POINTS.map(getMembers))
+Promise.all(API_END_POINTS.map(getMembersWithTwoTries))
   .then(() => {
-    console.log(`Download complete. New members will not be processed.`);
-    console.log(`We found ${members.length} members in total.`);
+    console.log(`Download complete. We found ${members.length} members in total.`);
     members.sort((a, b) => a.abbr > b.abbr ? 1 : -1);
     return members.map(m => {
       // return `${m.sname} (${m.abbr}) - ${m.pname}: Team ${m.tname}`
@@ -38,6 +37,25 @@ Promise.all(API_END_POINTS.map(getMembers))
     console.log(err)
   });
 
+function getMembersWithTwoTries({ name, url }) {
+  return new Promise((resolve, reject) => {
+    getMembers({ name, url })
+      .then(() => {
+        console.log("Success on first try: ", name);
+        resolve();
+      })
+      .catch(() => {
+        getMembers({ name, url }).then(() => {
+          console.log("Success on second try: ", name);
+          resolve();
+        }).catch(() => {
+          console.log("Fail after both tries: ", name);
+          reject();
+        });
+      });
+  });
+}
+
 function getMembers({ name, url }) {
   return new Promise((resolve, reject) => {
     http.get(url, (res) => {
@@ -53,13 +71,13 @@ function getMembers({ name, url }) {
           console.log(`Added ${result.rows.length} members in ${name}.`);
           resolve();
         } catch (err) {
-          console.log(`Failed when parsing JSON for ${name} because ${err}, retrying...`);
-          resolve();
-          return getMembers({ name, url });
+          console.log(`Failed when parsing JSON for ${name} because ${err}.`);
+          reject({ name, url });
         }
       });
     }).on('error', (err) => {
-      reject(err);
+      console.log(`Failed when downloading ${name} because ${err}.`);
+      reject({ name, url });
     });
   });
 }
