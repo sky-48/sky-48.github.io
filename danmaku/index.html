@@ -1,19 +1,33 @@
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
     <title>Danmaku Faker</title>
-</head>
+  </head>
 
-<body>
-    <button id="btnGo" onclick="go()">Go</button>
+  <body>
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <textarea id="input-text" class="col-sm-4" rows="10" cols="50">
+test
+2333333
+666666
+awsl
+</textarea
+      >
+
+      <button class="col-sm-1" id="btnGo" onclick="go()">Go</button>
+    </div>
     <hr />
-    <canvas id="canvas" width="600" height="400">
-    </canvas>
-</body>
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <canvas id="canvas" width="600" height="400"> </canvas>
+    </div>
+  </body>
 
-<script src="danmaku.js"></script>
-<script src="runner.js"></script>
-
+  <script src="danmaku.js"></script>
+  <script src="runner.js"></script>
 </html>
