@@ -15,23 +15,31 @@ function go() {
     .getElementById("input-text")
     .value.trim()
     .split("\n");
-  texts.push(...texts);
-  texts.push(...texts);
-  texts.push(...texts);
 
-  dispatchers = [...Array(11).keys()].map(id => new Dispatcher(id));
+  dispatchers = [...Array(13).keys()].map(id => new Dispatcher(id));
 
   document.getElementById("btnGo").disabled = true;
 
-  texts.map(text => new Danmaku(text)).forEach(d => danmakus.push(d));
-
   window.requestAnimationFrame(clear);
 
-  danmakus.forEach(d => {
-    dispatchers
-      .sort((a, b) => a.getCooldown() - b.getCooldown())[0]
-      .dispatch(d);
-  });
+  loop(dispatchers, texts);
+}
+
+function loop(dispatchers, texts) {
+  const text = texts[Math.floor(Math.random() * texts.length)];
+  dispatchers
+    .sort((a, b) => a.getCooldown() - b.getCooldown())[0]
+    .dispatch(new Danmaku(text));
+
+  const average = 50;
+  const variation = 40;
+  const delay = Math.random() * (2 * variation) + (average - variation);
+
+  dispatchers.forEach(d => d.cooldown(delay));
+
+  setTimeout(() => {
+    loop(dispatchers, texts);
+  }, delay);
 }
 
 function clear(timestamp) {
@@ -52,7 +60,7 @@ class Dispatcher {
   dispatch(danmaku) {
     console.log(this.id + " dispatching " + danmaku.text);
     danmaku.run(this.id + 1);
-    this.cd += 2000;
+    this.cd += danmaku.text.length * 400;
   }
 
   // todo - have a timer call this
