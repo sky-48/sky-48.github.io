@@ -1,17 +1,30 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="danmaku.js"></script>
+    <script defer src="dropmaku.js"></script>
+    <script defer src="runner.js"></script>
     <title>Danmaku Faker</title>
   </head>
 
   <body>
     <div class="row">
-      <div class="col-sm-1"></div>
-      <textarea id="input-text" class="col-sm-4" rows="10" cols="50">
+      <div class="column">
+        <div>
+          <label>Canvas Size:</label>
+          <input id="input-canvas-size" type="text" value="600*400" />
+          <button onclick="updateCanvasSize()">OK</button>
+        </div>
+        <div>
+          <label>Font:</label>
+          <input id="input-canvas-font" type="text" value="30px Arial" />
+          <button onclick="updateCanvasFont()">OK</button>
+        </div>
+      </div>
+      <textarea id="input-text" rows="5">
 test
 2333333
 666666
@@ -19,15 +32,25 @@ awsl
 </textarea
       >
 
-      <button class="col-sm-1" id="btnGo" onclick="go()">Go</button>
+      <button id="btnGo" onclick="go()">Go</button>
+
+      <div>
+        <div class="row">
+          <input id="dropmaku-text" type="text" value="ttl" />
+          <button onclick="send()">Send</button>
+        </div>
+
+        <div class="row">
+          <input disabled type="text" />
+          <button disabled onclick="">Send</button>
+        </div>
+      </div>
     </div>
     <hr />
-    <div class="row">
-      <div class="col-sm-1"></div>
-      <canvas id="canvas" width="600" height="400"> </canvas>
+
+    <div id="preview" class="relative-container">
+      <canvas id="canvas" width="600px" height="400px"> </canvas>
+      <!-- <p class="dropmaku" style="top: 0px">test</p> -->
     </div>
   </body>
-
-  <script src="danmaku.js"></script>
-  <script src="runner.js"></script>
 </html>

@@ -1,5 +1,5 @@
-const w = 600;
-const h = 400;
+let w = 600;
+let h = 400;
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 ctx.font = "30px Arial";
@@ -8,6 +8,29 @@ ctx.clear = function() {
   ctx.fillRect(0, 0, w, h);
 };
 ctx.clear();
+
+function updateCanvasSize() {
+  const value = document.getElementById("input-canvas-size").value;
+
+  w = value.split("*")[0];
+  h = value.split("*")[1];
+  canvas.width = w;
+  canvas.height = h;
+  ctx.clear();
+}
+
+function updateCanvasFont() {
+  const value = document.getElementById("input-canvas-font").value;
+  ctx.font = value;
+}
+
+function send() {
+  const text = document.getElementById("dropmaku-text").value;
+  for (let line = 0; line < 10; line++) {
+    new Dropmaku(text).run(line, line * 120 + Math.random() * 120);
+  }
+}
+
 var dispatchers;
 const danmakus = [];
 function go() {

@@ -1,0 +1,31 @@
+.row {
+  display: flex;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.relative-container {
+  position: absolute;
+  background-color: purple;
+  width: 600px;
+  height: 400px;
+}
+
+.dropmaku {
+  position: absolute;
+  color: red;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+  font: 30px Arial;
+  margin: 2;
+  top: 0px;
+}
+
+canvas#canvas {
+  position: absolute;
+  z-index: 0;
+}
