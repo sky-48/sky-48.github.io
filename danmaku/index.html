@@ -23,6 +23,11 @@
           <input id="input-canvas-font" type="text" value="30px Arial" />
           <button onclick="updateCanvasFont()">OK</button>
         </div>
+        <div>
+          <label>Delay (mean,variance):</label>
+          <input id="input-dispatch-delay" type="text" value="50,40" />
+          <button onclick="updateDispatchDelay()">OK</button>
+        </div>
       </div>
       <textarea id="input-text" rows="5">
 test
@@ -36,21 +41,35 @@ awsl
 
       <div>
         <div class="row">
-          <input id="dropmaku-text" type="text" value="ttl" />
-          <button onclick="send()">Send</button>
+          <input id="dropmaku-1" type="text" value="test" />
+          <button onclick="send('dropmaku-1')">Send</button>
         </div>
 
         <div class="row">
-          <input disabled type="text" />
-          <button disabled onclick="">Send</button>
+          <input id="dropmaku-2" type="text" value="ttl" />
+          <button onclick="send('dropmaku-2')">Send</button>
+        </div>
+
+        <div class="row">
+          <input id="dropmaku-3" type="text" value="sdz" />
+          <button onclick="send('dropmaku-3')">Send</button>
+        </div>
+
+        <div class="row">
+          <input id="dropmaku-4" type="text" value="sl" />
+          <button onclick="send('dropmaku-4')">Send</button>
         </div>
       </div>
+
+      <button onclick="table()">debug table</button>
     </div>
     <hr />
 
-    <div id="preview" class="relative-container">
-      <canvas id="canvas" width="600px" height="400px"> </canvas>
+    <div id="preview">
+      <canvas id="canvas"> </canvas>
       <!-- <p class="dropmaku" style="top: 0px">test</p> -->
     </div>
+
+    <hr />
   </body>
 </html>

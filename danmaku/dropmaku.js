@@ -8,21 +8,33 @@ class Dropmaku {
       const p = document.createElement("p");
       p.className = "dropmaku";
       p.innerText = this.text;
-      // p.style = "top: " + 30 * line + "px";
-      p.style = `top: ${30 * line}px; color: ${Dropmaku.getColor()};`;
+      p.style = `top: ${fontSize *
+        line}px; color: ${Dropmaku.getColor()}; font: ${fontStyle}`;
 
       const container = document.getElementById("preview");
       container.appendChild(p);
       setTimeout(() => {
         container.removeChild(p);
-      }, 3000);
+      }, 5000);
     }, delay);
   }
 
   static getColor() {
-    const rnd = Math.random() * 100;
-    if (rnd < 10) return "yellow";
-    if (rnd < 20) return "white";
-    return "red";
+    const colors = [
+      "#FE0302",
+      "#FFD302",
+      "#A0EE00",
+      "#00CD00",
+      "#019899",
+      "#CC0273",
+      "#FF7204",
+      "#89D5FF",
+      "#4266BE",
+      "#FFFF00",
+      "#FF0000"
+    ];
+
+    const rnd = Math.floor(Math.random() * colors.length);
+    return colors[rnd];
   }
 }

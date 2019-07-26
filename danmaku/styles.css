@@ -7,11 +7,8 @@
   flex-direction: column;
 }
 
-.relative-container {
+#preview {
   position: absolute;
-  background-color: purple;
-  width: 600px;
-  height: 400px;
 }
 
 .dropmaku {

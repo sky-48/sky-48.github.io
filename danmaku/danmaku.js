@@ -14,16 +14,28 @@ class Danmaku {
   draw() {
     this.left -= this.velocity;
     ctx.fillStyle = this.color;
-    ctx.fillText(this.text, this.left, this.line * 30);
+    ctx.fillText(this.text, this.left, this.line * fontSize);
     if (this.left > -1000) {
       window.requestAnimationFrame(() => this.draw());
     }
   }
 
   static getColor() {
-    const rnd = Math.random() * 100;
-    if (rnd < 10) return "yellow";
-    if (rnd < 20) return "red";
-    return "white";
+    const colors = [
+      "#FE0302",
+      "#FFD302",
+      "#A0EE00",
+      "#00CD00",
+      "#019899",
+      "#CC0273",
+      "#FF7204",
+      "#89D5FF",
+      "#FFFF00"
+    ];
+
+    let rnd = Math.random() * 100;
+    if (rnd < 80) return "white";
+    rnd = Math.floor(Math.random() * colors.length);
+    return colors[rnd];
   }
 }
