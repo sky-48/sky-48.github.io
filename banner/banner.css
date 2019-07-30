@@ -1,0 +1,32 @@
+#container {
+  position: relative;
+  background: linear-gradient(red, black, red);
+}
+
+.item {
+  position: absolute;
+  /* transition: width 50ms, height 50ms, left 2s, top 2s; */
+}
+
+.item#item-a {
+  background: linear-gradient(blue, white, blue);
+  z-index: 0;
+}
+.item#item-b {
+  background: linear-gradient(purple, white, purple);
+  z-index: 1;
+}
+.item#item-c {
+  background: linear-gradient(orange, white, orange);
+  z-index: 2;
+}
+.item#item-d {
+  background: linear-gradient(green, white, green);
+  z-index: 3;
+}
+
+#test {
+  width: 60px;
+  height: 60px;
+  background: red;
+}
