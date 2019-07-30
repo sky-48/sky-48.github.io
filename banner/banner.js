@@ -1,4 +1,4 @@
-const targetHeight = 100;
+const containerMinH = 200;
 
 function go() {
   const el = document.getElementById("square");
@@ -13,38 +13,33 @@ function go() {
   document.body.appendChild(p);
 });
 
+function print(msg) {
+  document.getElementById("debug").innerText = msg;
+}
+
+const container = document.getElementById("container");
+const items = [
+  document.getElementById("item-a"),
+  document.getElementById("item-b"),
+  document.getElementById("item-c"),
+  document.getElementById("item-d")
+];
+
 window.requestAnimationFrame(updateBanner);
 
 function updateBanner() {
-  const percent = window.pageYOffset / (window.innerHeight - targetHeight);
-  console.log(percent);
-  const h = window.innerHeight - window.pageYOffset;
-  console.log(`innerHeight = ${window.innerHeight}, y = ${window.pageYOffset}`);
-  const container = document.getElementById("container");
-  container.style["width"] = window.innerWidth;
-  container.style["height"] = window.innerHeight;
-  const items = [
-    document.getElementById("item-a"),
-    document.getElementById("item-b"),
-    document.getElementById("item-c"),
-    document.getElementById("item-d")
-  ];
+  const containerW = container.offsetWidth;
+  const containerH = container.offsetHeight;
 
-  console.log(
-    `tops are: ${(0 * h) / 4 + window.pageYOffset}, ${(1 * h) / 4 +
-      window.pageYOffset}, ${(2 * h) / 4 + window.pageYOffset}, ${(3 * h) / 4 +
-      window.pageYOffset}`
-  );
+  const percent = window.pageYOffset / (containerH - containerMinH);
+  const h = containerH - window.pageYOffset;
+
   for (let i = 0; i < items.length; i++) {
-    const top = (i * h) / 4 + window.pageYOffset;
-    items[i].style["top"] = top;
-    items[i].style["height"] = window.innerHeight / 4; // lerp(h / 4, h / 2, percent);
-    items[i].style["width"] = lerp(
-      window.innerWidth,
-      window.innerWidth / 4,
-      percent
-    );
-    items[i].style["left"] = lerp(0, (i * window.innerWidth) / 4, percent);
+    const top = (i * h) / 4;
+    items[i].style["top"] = lerp(top, containerH - containerMinH, percent);
+    items[i].style["height"] = lerp(containerH / 4, containerMinH, percent); // lerp(h / 4, h / 2, percent);
+    items[i].style["width"] = lerp(containerW, containerW / 4, percent);
+    items[i].style["left"] = lerp(0, (i * containerW) / 4, percent);
   }
 
   window.requestAnimationFrame(updateBanner);
