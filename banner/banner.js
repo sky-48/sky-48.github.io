@@ -12,9 +12,8 @@ function go() {
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
   document.body.appendChild(p);
 });
-updateBanner();
-window.addEventListener("scroll", updateBanner);
-window.addEventListener("resize", updateBanner);
+
+window.requestAnimationFrame(updateBanner);
 
 function updateBanner() {
   const percent = window.pageYOffset / (window.innerHeight - targetHeight);
@@ -47,6 +46,8 @@ function updateBanner() {
     );
     items[i].style["left"] = lerp(0, (i * window.innerWidth) / 4, percent);
   }
+
+  window.requestAnimationFrame(updateBanner);
 }
 
 function lerp(start, end, percent) {

@@ -5,7 +5,8 @@
 
 .item {
   position: absolute;
-  /* transition: width 50ms, height 50ms, left 2s, top 2s; */
+  transition: all 100ms;
+  will-change: left, top, height, width;
 }
 
 .item#item-a {
