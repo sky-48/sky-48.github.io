@@ -15,9 +15,13 @@ const members = [];
 Promise.all(API_END_POINTS.map(getMembersWithTwoTries))
   .then(() => {
     console.log(`Download complete. We found ${members.length} members in total.`);
-    members.sort((a, b) => a.abbr > b.abbr ? 1 : -1);
+    members.sort((a, b) => {
+      if (a.abbr !== b.abbr) {
+        return (a.abbr > b.abbr) ? 1 : -1;
+      }
+      return a.sid - b.sid
+    });
     return members.map(m => {
-      // return `${m.sname} (${m.abbr}) - ${m.pname}: Team ${m.tname}`
       const o = {}
       o.name = m.sname
       o.abbr = m.abbr
