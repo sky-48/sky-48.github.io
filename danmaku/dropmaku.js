@@ -23,15 +23,15 @@ class Dropmaku {
     const colors = [
       "#FE0302",
       "#FFD302",
-      "#A0EE00",
-      "#00CD00",
+      // "#A0EE00",
+      // "#00CD00",
       "#019899",
       "#CC0273",
       "#FF7204",
       "#89D5FF",
       "#4266BE",
       "#FFFF00",
-      "#FF0000"
+      "#FF0000",
     ];
 
     const rnd = Math.floor(Math.random() * colors.length);

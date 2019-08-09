@@ -7,7 +7,7 @@ class Danmaku {
     this.line = line;
     this.left = w;
     this.color = Danmaku.getColor();
-    this.velocity = Math.max(this.text.length / 2, 2);
+    this.velocity = (Math.random() * this.text.length) / 2 + 2; // Math.max(this.text.length / 2, 2);
     window.requestAnimationFrame(() => this.draw());
   }
 
@@ -22,15 +22,15 @@ class Danmaku {
 
   static getColor() {
     const colors = [
-      "#FE0302",
-      "#FFD302",
-      "#A0EE00",
-      "#00CD00",
-      "#019899",
-      "#CC0273",
-      "#FF7204",
-      "#89D5FF",
-      "#FFFF00"
+      "#FE0302", // red
+      "#FFD302", // dark yellow
+      // "#A0EE00", // light green
+      // "#00CD00", // dark green
+      "#019899", // teal
+      "#CC0273", // magenta
+      "#FF7204", // orange
+      "#89D5FF", // light blue
+      "#FFFF00", // yellow
     ];
 
     let rnd = Math.random() * 100;
