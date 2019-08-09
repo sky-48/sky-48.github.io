@@ -1,4 +1,4 @@
-{"last-update":1556509107069,"data":[
+{"last-update":1565366432651,"data":[
 {"name":"艾芷亦","abbr":"AZY","group":"CKG48 一期生","team":"K"},
 {"name":"卞佳宁","abbr":"BJN","group":"SHY48 四期生","team":"IDFT"},
 {"name":"毕瑞珊","abbr":"BRS","group":"GNZ48 三期生","team":"Z"},
@@ -241,6 +241,7 @@
 {"name":"汪慕远","abbr":"WMY","group":"GNZ48 三期生","team":"预备生"},
 {"name":"王梦竹","abbr":"WMZ","group":"CKG48 一期生","team":"IDFT"},
 {"name":"王秋茹","abbr":"WQR","group":"SHY48 四期生","team":"SNH48"},
+{"name":"王睿琦","abbr":"WRQ","group":"SHY48 二期生","team":"X"},
 {"name":"汪束","abbr":"WS","group":"SNH48 四期生","team":"X"},
 {"name":"王诗蒙","abbr":"WSM","group":"SHY48 一期生","team":"NII"},
 {"name":"王偲越","abbr":"WSY","group":"GNZ48 一期生","team":"Z"},
@@ -315,6 +316,7 @@
 {"name":"叶晓梦","abbr":"YXM","group":"GNZ48 三期生","team":"Z"},
 {"name":"杨晔","abbr":"YY","group":"BEJ48 一期生","team":"J"},
 {"name":"姚祎纯","abbr":"YYC","group":"SNH48 七期生","team":"预备生"},
+{"name":"鄢羽蝶","abbr":"YYD","group":"GNZ48 六期生","team":"IDFT"},
 {"name":"杨一帆","abbr":"YYF","group":"BEJ48 一期生","team":"E"},
 {"name":"杨允涵","abbr":"YYH","group":"SHY48 一期生","team":"IDFT"},
 {"name":"袁一琦","abbr":"YYQ","group":"SNH48 七期生","team":"HII"},
@@ -330,7 +332,7 @@
 {"name":"张丹丹","abbr":"ZDD","group":"BEJ48 四期生","team":"E"},
 {"name":"赵笛儿","abbr":"ZDE","group":"BEJ48 二期生","team":"E"},
 {"name":"郑丹妮","abbr":"ZDN","group":"SNH48 六期生","team":"NIII"},
-{"name":"张丹三","abbr":"ZDS","group":"SNH48 四期生","team":"IDFT"},
+{"name":"张丹三","abbr":"ZDS","group":"SNH48 四期生","team":"X"},
 {"name":"张怀瑾","abbr":"ZHJ","group":"BEJ48 一期生","team":"J"},
 {"name":"赵韩倩","abbr":"ZHQ","group":"SNH48 七期生","team":"SII"},
 {"name":"张韩紫陌","abbr":"ZHZM","group":"BEJ48 一期生","team":"IDFT"},
@@ -362,6 +364,7 @@
 {"name":"赵天杨","abbr":"ZTY","group":"SHY48 三期生","team":"B"},
 {"name":"张文静","abbr":"ZWJ","group":"SNH48 五期生","team":"预备生"},
 {"name":"左欣","abbr":"ZX","group":"CKG48 一期生","team":"IDFT"},
+{"name":"张昕","abbr":"ZX","group":"SNH48 三期生","team":"NIII"},
 {"name":"张昕","abbr":"ZX","group":"SNH48 三期生","team":"HII"},
 {"name":"周湘","abbr":"ZX","group":"BEJ48 四期生","team":"J"},
 {"name":"张茜","abbr":"ZX","group":"SNH48 九期生","team":"NII"},
