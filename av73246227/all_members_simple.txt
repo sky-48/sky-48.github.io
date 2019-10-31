@@ -1,0 +1,3263 @@
+get_members_success(
+{
+total: "407",
+rows: [
+{
+sid: "10001",
+status: "99",
+gid: "10",
+tid: "101",
+sname: "陈观慧",
+pinyin: "Chen GuanHui"
+},
+{
+sid: "10206",
+status: "99",
+gid: "10",
+tid: "101",
+sname: "陈俊羽",
+pinyin: "Chen JunYu"
+},
+{
+sid: "10002",
+status: "99",
+gid: "10",
+tid: "101",
+sname: "陈思",
+pinyin: "Chen Si"
+},
+{
+sid: "10221",
+status: "99",
+gid: "10",
+tid: "101",
+sname: "陈雨孜",
+pinyin: "Chen YuZi"
+},
+{
+sid: "10003",
+status: "99",
+gid: "10",
+tid: "101",
+sname: "戴萌",
+pinyin: "Dai Meng"
+},
+{
+sid: "10004",
+status: "99",
+gid: "10",
+tid: "101",
+sname: "蒋芸",
+pinyin: "Jiang Yun"
+},
+{
+sid: "10005",
+status: "99",
+gid: "10",
+tid: "101",
+sname: "孔肖吟",
+pinyin: "Kong XiaoYin"
+},
+{
+sid: "10222",
+status: "99",
+gid: "10",
+tid: "101",
+sname: "刘丽千",
+pinyin: "Liu LiQian"
+},
+{
+sid: "10006",
+status: "99",
+gid: "10",
+tid: "101",
+sname: "李宇琪",
+pinyin: "Li YuQi"
+},
+{
+sid: "10125",
+status: "99",
+gid: "10",
+tid: "101",
+sname: "刘增艳",
+pinyin: "Liu ZengYan"
+},
+{
+sid: "10007",
+status: "99",
+gid: "10",
+tid: "101",
+sname: "莫寒",
+pinyin: "Mo Han"
+},
+{
+sid: "10008",
+status: "99",
+gid: "10",
+tid: "101",
+sname: "钱蓓婷",
+pinyin: "Qian BeiTing"
+},
+{
+sid: "10009",
+status: "99",
+gid: "10",
+tid: "101",
+sname: "邱欣怡",
+pinyin: "Qiu XinYi"
+},
+{
+sid: "10010",
+status: "99",
+gid: "10",
+tid: "101",
+sname: "孙芮",
+pinyin: "Sun Rui"
+},
+{
+sid: "10086",
+status: "99",
+gid: "10",
+tid: "101",
+sname: "邵雪聪",
+pinyin: "Shao XueCong"
+},
+{
+sid: "10012",
+status: "99",
+gid: "10",
+tid: "101",
+sname: "温晶婕",
+pinyin: "Wen JingJie"
+},
+{
+sid: "10013",
+status: "99",
+gid: "10",
+tid: "101",
+sname: "吴哲晗",
+pinyin: "Wu ZheHan"
+},
+{
+sid: "10014",
+status: "99",
+gid: "10",
+tid: "101",
+sname: "徐晨辰",
+pinyin: "Xu ChenChen"
+},
+{
+sid: "10015",
+status: "99",
+gid: "10",
+tid: "101",
+sname: "许佳琪",
+pinyin: "Xu JiaQi"
+},
+{
+sid: "10073",
+status: "99",
+gid: "10",
+tid: "101",
+sname: "袁丹妮",
+pinyin: "Yuan DanNi"
+},
+{
+sid: "10017",
+status: "99",
+gid: "10",
+tid: "101",
+sname: "袁雨桢",
+pinyin: "Yuan YuZhen"
+},
+{
+sid: "10019",
+status: "99",
+gid: "10",
+tid: "101",
+sname: "张语格",
+pinyin: "Zhang YuGe"
+},
+{
+sid: "10020",
+status: "99",
+gid: "10",
+tid: "102",
+sname: "陈佳莹",
+pinyin: "Chen JiaYing"
+},
+{
+sid: "10023",
+status: "99",
+gid: "10",
+tid: "102",
+sname: "冯薪朵",
+pinyin: "Feng XinDuo"
+},
+{
+sid: "10025",
+status: "99",
+gid: "10",
+tid: "102",
+sname: "黄婷婷",
+pinyin: "Huang TingTing"
+},
+{
+sid: "10026",
+status: "99",
+gid: "10",
+tid: "102",
+sname: "何晓玉",
+pinyin: "He XiaoYu"
+},
+{
+sid: "10178",
+status: "99",
+gid: "10",
+tid: "102",
+sname: "金莹玥",
+pinyin: "Jin YingYue"
+},
+{
+sid: "10156",
+status: "99",
+gid: "10",
+tid: "102",
+sname: "江真仪",
+pinyin: "Jiang ZhenYi"
+},
+{
+sid: "10201",
+status: "99",
+gid: "10",
+tid: "102",
+sname: "刘洁",
+pinyin: "Liu Jie"
+},
+{
+sid: "10030",
+status: "99",
+gid: "10",
+tid: "102",
+sname: "陆婷",
+pinyin: "Lu Ting"
+},
+{
+sid: "10207",
+status: "99",
+gid: "10",
+tid: "102",
+sname: "卢天惠",
+pinyin: "Lu TianHui"
+},
+{
+sid: "10185",
+status: "99",
+gid: "10",
+tid: "102",
+sname: "马凡",
+pinyin: "Ma Fan"
+},
+{
+sid: "10208",
+status: "99",
+gid: "10",
+tid: "102",
+sname: "王诗蒙",
+pinyin: "Wang ShiMeng"
+},
+{
+sid: "10067",
+status: "99",
+gid: "10",
+tid: "102",
+sname: "谢妮",
+pinyin: "Xie Ni"
+},
+{
+sid: "10036",
+status: "99",
+gid: "10",
+tid: "102",
+sname: "易嘉爱",
+pinyin: "Yi JiaAi"
+},
+{
+sid: "10205",
+status: "99",
+gid: "10",
+tid: "102",
+sname: "颜沁",
+pinyin: "Yan Qin"
+},
+{
+sid: "10209",
+status: "99",
+gid: "10",
+tid: "102",
+sname: "赵佳蕊",
+pinyin: "Zhao JiaRui"
+},
+{
+sid: "10196",
+status: "99",
+gid: "10",
+tid: "102",
+sname: "周诗雨",
+pinyin: "Zhou ShiYu"
+},
+{
+sid: "10195",
+status: "99",
+gid: "10",
+tid: "102",
+sname: "张茜",
+pinyin: "Zhang Xi"
+},
+{
+sid: "10037",
+status: "99",
+gid: "10",
+tid: "102",
+sname: "赵粤",
+pinyin: "Zhao Yue"
+},
+{
+sid: "10141",
+status: "99",
+gid: "10",
+tid: "102",
+sname: "张怡",
+pinyin: "Zhang Yi"
+},
+{
+sid: "10076",
+status: "99",
+gid: "10",
+tid: "102",
+sname: "张雨鑫",
+pinyin: "Zhang YuXin"
+},
+{
+sid: "10186",
+status: "99",
+gid: "10",
+tid: "103",
+sname: "陈盼",
+pinyin: "Chen Pan"
+},
+{
+sid: "10114",
+status: "99",
+gid: "10",
+tid: "103",
+sname: "费沁源",
+pinyin: "Fei QinYuan"
+},
+{
+sid: "10210",
+status: "99",
+gid: "10",
+tid: "103",
+sname: "郭爽",
+pinyin: "Guo Shuang"
+},
+{
+sid: "10211",
+status: "99",
+gid: "10",
+tid: "103",
+sname: "郝婧怡",
+pinyin: "Hao JingYi"
+},
+{
+sid: "10117",
+status: "99",
+gid: "10",
+tid: "103",
+sname: "洪珮雲",
+pinyin: "Hong PeiYun"
+},
+{
+sid: "10119",
+status: "99",
+gid: "10",
+tid: "103",
+sname: "姜杉",
+pinyin: "Jiang Shan"
+},
+{
+sid: "10120",
+status: "99",
+gid: "10",
+tid: "103",
+sname: "蒋舒婷",
+pinyin: "Jiang ShuTing"
+},
+{
+sid: "10223",
+status: "99",
+gid: "10",
+tid: "103",
+sname: "江鑫",
+pinyin: "Jiang Xin"
+},
+{
+sid: "10061",
+status: "99",
+gid: "10",
+tid: "103",
+sname: "林楠",
+pinyin: "Lin Nan"
+},
+{
+sid: "10212",
+status: "99",
+gid: "10",
+tid: "103",
+sname: "林舒晴",
+pinyin: "Lin ShuQing"
+},
+{
+sid: "10029",
+status: "99",
+gid: "10",
+tid: "103",
+sname: "林思意",
+pinyin: "Lin SiYi"
+},
+{
+sid: "10189",
+status: "99",
+gid: "10",
+tid: "103",
+sname: "李玉倩",
+pinyin: "Li YuQian"
+},
+{
+sid: "10199",
+status: "99",
+gid: "10",
+tid: "103",
+sname: "戚予珠",
+pinyin: "Qi YuZhu"
+},
+{
+sid: "10104",
+status: "99",
+gid: "10",
+tid: "103",
+sname: "沈梦瑶",
+pinyin: "Shen MengYao"
+},
+{
+sid: "10129",
+status: "99",
+gid: "10",
+tid: "103",
+sname: "宋雨珊",
+pinyin: "Song YuShan"
+},
+{
+sid: "10146",
+status: "99",
+gid: "10",
+tid: "103",
+sname: "孙珍妮",
+pinyin: "Sun ZhenNi"
+},
+{
+sid: "10034",
+status: "99",
+gid: "10",
+tid: "103",
+sname: "万丽娜",
+pinyin: "Wan LiNa"
+},
+{
+sid: "10192",
+status: "99",
+gid: "10",
+tid: "103",
+sname: "王欣颜甜甜",
+pinyin: "Wang XinYanTianTian"
+},
+{
+sid: "10181",
+status: "99",
+gid: "10",
+tid: "103",
+sname: "王奕",
+pinyin: "Wang Yi"
+},
+{
+sid: "10070",
+status: "99",
+gid: "10",
+tid: "103",
+sname: "许杨玉琢",
+pinyin: "Xu YangYuZhuo"
+},
+{
+sid: "10163",
+status: "99",
+gid: "10",
+tid: "103",
+sname: "袁一琦",
+pinyin: "Yuan YiQi"
+},
+{
+sid: "10075",
+status: "99",
+gid: "10",
+tid: "103",
+sname: "张昕",
+pinyin: "Zhang Xin"
+},
+{
+sid: "10081",
+status: "99",
+gid: "10",
+tid: "104",
+sname: "陈琳",
+pinyin: "Chen Lin"
+},
+{
+sid: "10082",
+status: "99",
+gid: "10",
+tid: "104",
+sname: "冯晓菲",
+pinyin: "Feng XiaoFei"
+},
+{
+sid: "10204",
+status: "99",
+gid: "10",
+tid: "104",
+sname: "鲁静萍",
+pinyin: "Lu JingPing"
+},
+{
+sid: "10188",
+status: "99",
+gid: "10",
+tid: "104",
+sname: "李星羽",
+pinyin: "Li XingYu"
+},
+{
+sid: "10153",
+status: "99",
+gid: "10",
+tid: "104",
+sname: "吕一",
+pinyin: "Lv Yi"
+},
+{
+sid: "10084",
+status: "99",
+gid: "10",
+tid: "104",
+sname: "李钊",
+pinyin: "Li Zhao"
+},
+{
+sid: "10224",
+status: "99",
+gid: "10",
+tid: "104",
+sname: "潘璐瑶",
+pinyin: "Pan LuYao"
+},
+{
+sid: "10126",
+status: "99",
+gid: "10",
+tid: "104",
+sname: "潘瑛琪",
+pinyin: "Pan YingQi"
+},
+{
+sid: "10164",
+status: "99",
+gid: "10",
+tid: "104",
+sname: "祁静",
+pinyin: "Qi Jing"
+},
+{
+sid: "10214",
+status: "99",
+gid: "10",
+tid: "104",
+sname: "冉蔚",
+pinyin: "Ran Wei"
+},
+{
+sid: "10087",
+status: "99",
+gid: "10",
+tid: "104",
+sname: "宋昕冉",
+pinyin: "Song XinRan"
+},
+{
+sid: "10088",
+status: "99",
+gid: "10",
+tid: "104",
+sname: "孙歆文",
+pinyin: "Sun XinWen"
+},
+{
+sid: "10215",
+status: "99",
+gid: "10",
+tid: "104",
+sname: "王菲妍",
+pinyin: "Wang FeiYan"
+},
+{
+sid: "10089",
+status: "99",
+gid: "10",
+tid: "104",
+sname: "汪佳翎",
+pinyin: "Wang JiaLing"
+},
+{
+sid: "10220",
+status: "99",
+gid: "10",
+tid: "104",
+sname: "王睿琦",
+pinyin: "Wang RuiQi"
+},
+{
+sid: "10091",
+status: "99",
+gid: "10",
+tid: "104",
+sname: "王晓佳",
+pinyin: "Wang XiaoJia"
+},
+{
+sid: "10092",
+status: "99",
+gid: "10",
+tid: "104",
+sname: "谢天依",
+pinyin: "Xie TianYi"
+},
+{
+sid: "10093",
+status: "99",
+gid: "10",
+tid: "104",
+sname: "杨冰怡",
+pinyin: "Yang BingYi"
+},
+{
+sid: "10096",
+status: "99",
+gid: "10",
+tid: "104",
+sname: "张丹三",
+pinyin: "Zhang DanSan"
+},
+{
+sid: "10149",
+status: "99",
+gid: "10",
+tid: "104",
+sname: "张嘉予",
+pinyin: "Zhang JiaYu"
+},
+{
+sid: "10218",
+status: "99",
+gid: "10",
+tid: "104",
+sname: "张琼予",
+pinyin: "Zhang QiongYu"
+},
+{
+sid: "10219",
+status: "99",
+gid: "10",
+tid: "151",
+sname: "高崇",
+pinyin: "Gao Chong"
+},
+{
+sid: "10151",
+status: "99",
+gid: "10",
+tid: "151",
+sname: "李佳恩",
+pinyin: "Li JiaEn"
+},
+{
+sid: "10216",
+status: "99",
+gid: "10",
+tid: "151",
+sname: "王秋茹",
+pinyin: "Wang QiuRu"
+},
+{
+sid: "10203",
+status: "99",
+gid: "10",
+tid: "151",
+sname: "周睿林",
+pinyin: "Zhou RuiLin"
+},
+{
+sid: "10016",
+status: "44",
+gid: "10",
+tid: "101",
+sname: "徐子轩",
+pinyin: "Xu ZiXuan"
+},
+{
+sid: "10193",
+status: "44",
+gid: "10",
+tid: "101",
+sname: "杨令仪",
+pinyin: "Yang LingYi"
+},
+{
+sid: "10155",
+status: "44",
+gid: "10",
+tid: "101",
+sname: "赵韩倩",
+pinyin: "Zhao HanQian"
+},
+{
+sid: "10018",
+status: "44",
+gid: "10",
+tid: "101",
+sname: "赵嘉敏",
+pinyin: "Zhao JiaMin"
+},
+{
+sid: "10197",
+status: "44",
+gid: "10",
+tid: "101",
+sname: "朱小丹",
+pinyin: "Zhu XiaoDan"
+},
+{
+sid: "10077",
+status: "44",
+gid: "10",
+tid: "101",
+sname: "赵晔",
+pinyin: "Zhao Ye"
+},
+{
+sid: "10021",
+status: "44",
+gid: "10",
+tid: "102",
+sname: "陈问言",
+pinyin: "Chen WenYan"
+},
+{
+sid: "10024",
+status: "44",
+gid: "10",
+tid: "102",
+sname: "龚诗淇",
+pinyin: "Gong ShiQi"
+},
+{
+sid: "10054",
+status: "44",
+gid: "10",
+tid: "102",
+sname: "郝婉晴",
+pinyin: "Hao WanQing"
+},
+{
+sid: "10202",
+status: "44",
+gid: "10",
+tid: "102",
+sname: "栾嘉仪",
+pinyin: "Luan JiaYi"
+},
+{
+sid: "10187",
+status: "44",
+gid: "10",
+tid: "102",
+sname: "李美琪",
+pinyin: "Li MeiQi"
+},
+{
+sid: "10063",
+status: "44",
+gid: "10",
+tid: "102",
+sname: "刘佩鑫",
+pinyin: "Liu PeiXin"
+},
+{
+sid: "10033",
+status: "44",
+gid: "10",
+tid: "102",
+sname: "唐安琪",
+pinyin: "Tang AnQi"
+},
+{
+sid: "10177",
+status: "44",
+gid: "10",
+tid: "102",
+sname: "陶波尔",
+pinyin: "Tao BoEr"
+},
+{
+sid: "10133",
+status: "44",
+gid: "10",
+tid: "102",
+sname: "严佼君",
+pinyin: "Yan JiaoJun"
+},
+{
+sid: "10103",
+status: "44",
+gid: "10",
+tid: "102",
+sname: "周怡",
+pinyin: "Zhou Yi"
+},
+{
+sid: "10038",
+status: "44",
+gid: "10",
+tid: "102",
+sname: "曾艳芬",
+pinyin: "Zeng YanFen"
+},
+{
+sid: "10161",
+status: "44",
+gid: "10",
+tid: "102",
+sname: "张雅梦",
+pinyin: "Zhang YaMeng"
+},
+{
+sid: "10068",
+status: "44",
+gid: "10",
+tid: "103",
+sname: "徐晗",
+pinyin: "Xu Han"
+},
+{
+sid: "10106",
+status: "44",
+gid: "10",
+tid: "103",
+sname: "袁航",
+pinyin: "Yuan Hang"
+},
+{
+sid: "10170",
+status: "44",
+gid: "10",
+tid: "103",
+sname: "曾晓雯",
+pinyin: "Zeng XiaoWen"
+},
+{
+sid: "10083",
+status: "44",
+gid: "10",
+tid: "104",
+sname: "李晶",
+pinyin: "Li Jing"
+},
+{
+sid: "10213",
+status: "44",
+gid: "10",
+tid: "104",
+sname: "刘静晗",
+pinyin: "Liu JingHan"
+},
+{
+sid: "10148",
+status: "44",
+gid: "10",
+tid: "104",
+sname: "林忆宁",
+pinyin: "Lin YiNing"
+},
+{
+sid: "10090",
+status: "44",
+gid: "10",
+tid: "104",
+sname: "汪束",
+pinyin: "Wang Shu"
+},
+{
+sid: "10167",
+status: "44",
+gid: "10",
+tid: "104",
+sname: "徐诗琪",
+pinyin: "Xu ShiQi"
+},
+{
+sid: "10095",
+status: "44",
+gid: "10",
+tid: "104",
+sname: "杨韫玉",
+pinyin: "Yang YunYu"
+},
+{
+sid: "10109",
+status: "44",
+gid: "10",
+tid: "105",
+sname: "陈音",
+pinyin: "Chen Yin"
+},
+{
+sid: "10138",
+status: "44",
+gid: "10",
+tid: "105",
+sname: "邹佳佳",
+pinyin: "Zou JiaJia"
+},
+{
+sid: "10191",
+status: "44",
+gid: "10",
+tid: "106",
+sname: "王溪源",
+pinyin: "Wang XiYuan"
+},
+{
+sid: "10198",
+status: "44",
+gid: "10",
+tid: "106",
+sname: "张馨月",
+pinyin: "Zhang XinYue"
+},
+{
+sid: "10142",
+status: "44",
+gid: "10",
+tid: "150",
+sname: "成珏",
+pinyin: "Cheng Jue"
+},
+{
+sid: "10144",
+status: "44",
+gid: "10",
+tid: "150",
+sname: "黄彤扬",
+pinyin: "Huang TongYang"
+},
+{
+sid: "10057",
+status: "44",
+gid: "10",
+tid: "150",
+sname: "李清扬",
+pinyin: "Li QingYang"
+},
+{
+sid: "10158",
+status: "44",
+gid: "10",
+tid: "150",
+sname: "刘瀛",
+pinyin: "Liu Ying"
+},
+{
+sid: "10154",
+status: "44",
+gid: "10",
+tid: "150",
+sname: "潘燕琦",
+pinyin: "Pan YanQi"
+},
+{
+sid: "10011",
+status: "44",
+gid: "10",
+tid: "150",
+sname: "沈之琳",
+pinyin: "Shen ZhiLin"
+},
+{
+sid: "10064",
+status: "44",
+gid: "10",
+tid: "150",
+sname: "王柏硕",
+pinyin: "Wang BaiShuo"
+},
+{
+sid: "10066",
+status: "44",
+gid: "10",
+tid: "150",
+sname: "吴燕文",
+pinyin: "Wu YanWen"
+},
+{
+sid: "10165",
+status: "44",
+gid: "10",
+tid: "150",
+sname: "姚祎纯",
+pinyin: "Yao YiChun"
+},
+{
+sid: "10140",
+status: "44",
+gid: "10",
+tid: "150",
+sname: "张文静",
+pinyin: "Zhang WenJing"
+},
+{
+sid: "20100",
+status: "99",
+gid: "20",
+tid: "201",
+sname: "程戈",
+pinyin: "Cheng Ge"
+},
+{
+sid: "20003",
+status: "99",
+gid: "20",
+tid: "201",
+sname: "段艺璇",
+pinyin: "Duan YiXuan"
+},
+{
+sid: "20058",
+status: "99",
+gid: "20",
+tid: "201",
+sname: "胡丽芝",
+pinyin: "Hu LiZhi"
+},
+{
+sid: "20006",
+status: "99",
+gid: "20",
+tid: "201",
+sname: "胡晓慧",
+pinyin: "Hu XiaoHui"
+},
+{
+sid: "20115",
+status: "99",
+gid: "20",
+tid: "201",
+sname: "吕蕊",
+pinyin: "Lv Rui"
+},
+{
+sid: "20007",
+status: "99",
+gid: "20",
+tid: "201",
+sname: "刘姝贤",
+pinyin: "Liu ShuXian"
+},
+{
+sid: "20008",
+status: "99",
+gid: "20",
+tid: "201",
+sname: "林溪荷",
+pinyin: "Lin XiHe"
+},
+{
+sid: "20116",
+status: "99",
+gid: "20",
+tid: "201",
+sname: "宁轲",
+pinyin: "Ning Ke"
+},
+{
+sid: "20088",
+status: "99",
+gid: "20",
+tid: "201",
+sname: "曲美霖",
+pinyin: "Qu MeiLin"
+},
+{
+sid: "20010",
+status: "99",
+gid: "20",
+tid: "201",
+sname: "青钰雯",
+pinyin: "Qing YuWen"
+},
+{
+sid: "20073",
+status: "99",
+gid: "20",
+tid: "201",
+sname: "沈小爱",
+pinyin: "Shen XiaoAi"
+},
+{
+sid: "20062",
+status: "99",
+gid: "20",
+tid: "201",
+sname: "孙晓艳",
+pinyin: "Sun XiaoYan"
+},
+{
+sid: "20013",
+status: "99",
+gid: "20",
+tid: "201",
+sname: "田姝丽",
+pinyin: "Tian ShuLi"
+},
+{
+sid: "20017",
+status: "99",
+gid: "20",
+tid: "201",
+sname: "熊素君",
+pinyin: "Xiong SuJun"
+},
+{
+sid: "20019",
+status: "99",
+gid: "20",
+tid: "201",
+sname: "闫明筠",
+pinyin: "Yan MingJun"
+},
+{
+sid: "20081",
+status: "99",
+gid: "20",
+tid: "201",
+sname: "杨鑫",
+pinyin: "Yang Xin"
+},
+{
+sid: "20021",
+status: "99",
+gid: "20",
+tid: "201",
+sname: "张梦慧",
+pinyin: "Zhang MengHui"
+},
+{
+sid: "20101",
+status: "99",
+gid: "20",
+tid: "201",
+sname: "赵天杨",
+pinyin: "Zhao TianYang"
+},
+{
+sid: "20102",
+status: "99",
+gid: "20",
+tid: "201",
+sname: "张羽涵",
+pinyin: "Zhang YuHan"
+},
+{
+sid: "20024",
+status: "99",
+gid: "20",
+tid: "202",
+sname: "陈倩楠",
+pinyin: "Chen QianNan"
+},
+{
+sid: "20093",
+status: "99",
+gid: "20",
+tid: "202",
+sname: "程宇璐",
+pinyin: "Cheng YuLu"
+},
+{
+sid: "20111",
+status: "99",
+gid: "20",
+tid: "202",
+sname: "陈亿杉",
+pinyin: "Chen YiShan"
+},
+{
+sid: "20025",
+status: "99",
+gid: "20",
+tid: "202",
+sname: "冯思佳",
+pinyin: "Feng SiJia"
+},
+{
+sid: "20114",
+status: "99",
+gid: "20",
+tid: "202",
+sname: "冯薪朵",
+pinyin: "Feng XinDuo"
+},
+{
+sid: "20078",
+status: "99",
+gid: "20",
+tid: "202",
+sname: "李娜",
+pinyin: "Li Na"
+},
+{
+sid: "20028",
+status: "99",
+gid: "20",
+tid: "202",
+sname: "刘胜男",
+pinyin: "Liu ShengNan"
+},
+{
+sid: "20029",
+status: "99",
+gid: "20",
+tid: "202",
+sname: "李诗彦",
+pinyin: "Li ShiYan"
+},
+{
+sid: "20033",
+status: "99",
+gid: "20",
+tid: "202",
+sname: "李梓",
+pinyin: "Li Zi"
+},
+{
+sid: "20034",
+status: "99",
+gid: "20",
+tid: "202",
+sname: "马玉灵",
+pinyin: "Ma YuLing"
+},
+{
+sid: "20087",
+status: "99",
+gid: "20",
+tid: "202",
+sname: "彭嘉敏",
+pinyin: "Peng JiaMin"
+},
+{
+sid: "20095",
+status: "99",
+gid: "20",
+tid: "202",
+sname: "任蔓琳",
+pinyin: "Ren ManLin"
+},
+{
+sid: "20035",
+status: "99",
+gid: "20",
+tid: "202",
+sname: "苏杉杉",
+pinyin: "Su ShanShan"
+},
+{
+sid: "20104",
+status: "99",
+gid: "20",
+tid: "202",
+sname: "王雨兰",
+pinyin: "Wang YuLan"
+},
+{
+sid: "20036",
+status: "99",
+gid: "20",
+tid: "202",
+sname: "顼凘炀",
+pinyin: "Xu SiYang"
+},
+{
+sid: "20089",
+status: "99",
+gid: "20",
+tid: "202",
+sname: "熊鑫",
+pinyin: "Xiong Xin"
+},
+{
+sid: "20037",
+status: "99",
+gid: "20",
+tid: "202",
+sname: "杨一帆",
+pinyin: "Yang YiFan"
+},
+{
+sid: "20105",
+status: "99",
+gid: "20",
+tid: "202",
+sname: "张爱静",
+pinyin: "Zhang AiJing"
+},
+{
+sid: "20112",
+status: "99",
+gid: "20",
+tid: "202",
+sname: "曾洁",
+pinyin: "Zeng Jie"
+},
+{
+sid: "20039",
+status: "99",
+gid: "20",
+tid: "202",
+sname: "张笑盈",
+pinyin: "Zhang XiaoYing"
+},
+{
+sid: "20113",
+status: "99",
+gid: "20",
+tid: "202",
+sname: "张智杰",
+pinyin: "Zhang ZhiJie"
+},
+{
+sid: "20099",
+status: "99",
+gid: "20",
+tid: "203",
+sname: "柏欣妤",
+pinyin: "Bai XinYu"
+},
+{
+sid: "20041",
+status: "99",
+gid: "20",
+tid: "203",
+sname: "陈雅钰",
+pinyin: "Chen YaYu"
+},
+{
+sid: "20042",
+status: "99",
+gid: "20",
+tid: "203",
+sname: "房蕾",
+pinyin: "Fang Lei"
+},
+{
+sid: "20043",
+status: "99",
+gid: "20",
+tid: "203",
+sname: "葛司琪",
+pinyin: "Ge SiQi"
+},
+{
+sid: "20044",
+status: "99",
+gid: "20",
+tid: "203",
+sname: "黄恩茹",
+pinyin: "Huang EnRu"
+},
+{
+sid: "20107",
+status: "99",
+gid: "20",
+tid: "203",
+sname: "韩家乐",
+pinyin: "Han JiaLe"
+},
+{
+sid: "20080",
+status: "99",
+gid: "20",
+tid: "203",
+sname: "何阳青青",
+pinyin: "HeYang QingQing"
+},
+{
+sid: "20068",
+status: "99",
+gid: "20",
+tid: "203",
+sname: "金锣赛",
+pinyin: "Jin LuoSai"
+},
+{
+sid: "20046",
+status: "99",
+gid: "20",
+tid: "203",
+sname: "刘闲",
+pinyin: "Liu Xian"
+},
+{
+sid: "20070",
+status: "99",
+gid: "20",
+tid: "203",
+sname: "刘一菲",
+pinyin: "Liu YiFei"
+},
+{
+sid: "20051",
+status: "99",
+gid: "20",
+tid: "203",
+sname: "孙语姗",
+pinyin: "Sun YuShan"
+},
+{
+sid: "20108",
+status: "99",
+gid: "20",
+tid: "203",
+sname: "唐霖",
+pinyin: "Tang Lin"
+},
+{
+sid: "20052",
+status: "99",
+gid: "20",
+tid: "203",
+sname: "王雨煊",
+pinyin: "Wang YuXuan"
+},
+{
+sid: "20054",
+status: "99",
+gid: "20",
+tid: "203",
+sname: "叶苗苗",
+pinyin: "Ye MiaoMiao"
+},
+{
+sid: "20055",
+status: "99",
+gid: "20",
+tid: "203",
+sname: "杨晔",
+pinyin: "Yang Ye"
+},
+{
+sid: "20056",
+status: "99",
+gid: "20",
+tid: "203",
+sname: "张怀瑾",
+pinyin: "Zhang HuaiJin"
+},
+{
+sid: "20092",
+status: "99",
+gid: "20",
+tid: "203",
+sname: "周湘",
+pinyin: "Zhou Xiang"
+},
+{
+sid: "20001",
+status: "44",
+gid: "20",
+tid: "201",
+sname: "陈美君",
+pinyin: "Chen MeiJun"
+},
+{
+sid: "20110",
+status: "44",
+gid: "20",
+tid: "201",
+sname: "李瑜璇",
+pinyin: "Li YuXuan"
+},
+{
+sid: "20009",
+status: "44",
+gid: "20",
+tid: "201",
+sname: "牛聪聪",
+pinyin: "Niu CongCong"
+},
+{
+sid: "20011",
+status: "44",
+gid: "20",
+tid: "201",
+sname: "孙姗",
+pinyin: "Sun Shan"
+},
+{
+sid: "20018",
+status: "44",
+gid: "20",
+tid: "201",
+sname: "夏越",
+pinyin: "Xia Yue"
+},
+{
+sid: "20082",
+status: "44",
+gid: "20",
+tid: "201",
+sname: "周洁艺",
+pinyin: "Zhou JieYi"
+},
+{
+sid: "20023",
+status: "44",
+gid: "20",
+tid: "202",
+sname: "陈姣荷",
+pinyin: "Chen JiaoHe"
+},
+{
+sid: "20084",
+status: "44",
+gid: "20",
+tid: "202",
+sname: "高蔚然",
+pinyin: "Gao WeiRan"
+},
+{
+sid: "20064",
+status: "44",
+gid: "20",
+tid: "202",
+sname: "黄子璇",
+pinyin: "Huang ZiXuan"
+},
+{
+sid: "20094",
+status: "44",
+gid: "20",
+tid: "202",
+sname: "李丽满",
+pinyin: "Li LiMan"
+},
+{
+sid: "20030",
+status: "44",
+gid: "20",
+tid: "202",
+sname: "李想",
+pinyin: "Li Xiang"
+},
+{
+sid: "20032",
+status: "44",
+gid: "20",
+tid: "202",
+sname: "李媛媛",
+pinyin: "Li YuanYuan"
+},
+{
+sid: "20106",
+status: "44",
+gid: "20",
+tid: "202",
+sname: "臧聪",
+pinyin: "Zang Cong"
+},
+{
+sid: "20091",
+status: "44",
+gid: "20",
+tid: "202",
+sname: "张丹丹",
+pinyin: "Zhang DanDan"
+},
+{
+sid: "20067",
+status: "44",
+gid: "20",
+tid: "202",
+sname: "赵笛儿",
+pinyin: "Zhao DiEr"
+},
+{
+sid: "20086",
+status: "44",
+gid: "20",
+tid: "203",
+sname: "楼澍",
+pinyin: "Lou Shu"
+},
+{
+sid: "20047",
+status: "44",
+gid: "20",
+tid: "203",
+sname: "任心怡",
+pinyin: "Ren XinYi"
+},
+{
+sid: "20050",
+status: "44",
+gid: "20",
+tid: "203",
+sname: "石羽莎",
+pinyin: "Shi YuSha"
+},
+{
+sid: "20083",
+status: "44",
+gid: "20",
+tid: "210",
+sname: "付奕萱",
+pinyin: "Fu YiXuan"
+},
+{
+sid: "30057",
+status: "99",
+gid: "30",
+tid: "301",
+sname: "陈佳莹",
+pinyin: "Chen JiaYing"
+},
+{
+sid: "30001",
+status: "99",
+gid: "30",
+tid: "301",
+sname: "陈珂",
+pinyin: "Chen Ke"
+},
+{
+sid: "30075",
+status: "99",
+gid: "30",
+tid: "301",
+sname: "符冰冰",
+pinyin: "Fu BingBing"
+},
+{
+sid: "30004",
+status: "99",
+gid: "30",
+tid: "301",
+sname: "高源婧",
+pinyin: "Gao YuanJing"
+},
+{
+sid: "30076",
+status: "99",
+gid: "30",
+tid: "301",
+sname: "黄楚茵",
+pinyin: "Huang ChuYin"
+},
+{
+sid: "30010",
+status: "99",
+gid: "30",
+tid: "301",
+sname: "罗寒月",
+pinyin: "Luo HanYue"
+},
+{
+sid: "30092",
+status: "99",
+gid: "30",
+tid: "301",
+sname: "梁娇",
+pinyin: "Liang Jiao"
+},
+{
+sid: "30007",
+status: "99",
+gid: "30",
+tid: "301",
+sname: "林嘉佩",
+pinyin: "Lin JiaPei"
+},
+{
+sid: "30078",
+status: "99",
+gid: "30",
+tid: "301",
+sname: "罗可嘉",
+pinyin: "Luo KeJia"
+},
+{
+sid: "30101",
+status: "99",
+gid: "30",
+tid: "301",
+sname: "李姗姗",
+pinyin: "Li ShanShan"
+},
+{
+sid: "30080",
+status: "99",
+gid: "30",
+tid: "301",
+sname: "林芝",
+pinyin: "Lin Zhi"
+},
+{
+sid: "30102",
+status: "99",
+gid: "30",
+tid: "301",
+sname: "徐楚雯",
+pinyin: "Xu ChuWen"
+},
+{
+sid: "30103",
+status: "99",
+gid: "30",
+tid: "301",
+sname: "徐慧玲",
+pinyin: "Xu HuiLing"
+},
+{
+sid: "30012",
+status: "99",
+gid: "30",
+tid: "301",
+sname: "谢蕾蕾",
+pinyin: "Xie LeiLei"
+},
+{
+sid: "30013",
+status: "99",
+gid: "30",
+tid: "301",
+sname: "阳青颖",
+pinyin: "Yang QingYing"
+},
+{
+sid: "30098",
+status: "99",
+gid: "30",
+tid: "301",
+sname: "叶舒淇",
+pinyin: "Ye ShuQi"
+},
+{
+sid: "30014",
+status: "99",
+gid: "30",
+tid: "301",
+sname: "曾艾佳",
+pinyin: "Zeng AiJia"
+},
+{
+sid: "30016",
+status: "99",
+gid: "30",
+tid: "301",
+sname: "张琼予",
+pinyin: "Zhang QiongYu"
+},
+{
+sid: "30071",
+status: "99",
+gid: "30",
+tid: "301",
+sname: "朱怡欣",
+pinyin: "Zhu YiXin"
+},
+{
+sid: "30020",
+status: "99",
+gid: "30",
+tid: "302",
+sname: "陈楠茜",
+pinyin: "Chen NanXi"
+},
+{
+sid: "30021",
+status: "99",
+gid: "30",
+tid: "302",
+sname: "陈欣妤",
+pinyin: "Chen XinYu"
+},
+{
+sid: "30097",
+status: "99",
+gid: "30",
+tid: "302",
+sname: "邓熳慧",
+pinyin: "Deng ManHui"
+},
+{
+sid: "30023",
+status: "99",
+gid: "30",
+tid: "302",
+sname: "洪静雯",
+pinyin: "Hong JingWen"
+},
+{
+sid: "30026",
+status: "99",
+gid: "30",
+tid: "302",
+sname: "卢静",
+pinyin: "Lu Jing"
+},
+{
+sid: "30024",
+status: "99",
+gid: "30",
+tid: "302",
+sname: "刘力菲",
+pinyin: "Liu LiFei"
+},
+{
+sid: "30025",
+status: "99",
+gid: "30",
+tid: "302",
+sname: "刘倩倩",
+pinyin: "Liu QianQian"
+},
+{
+sid: "30027",
+status: "99",
+gid: "30",
+tid: "302",
+sname: "孙馨",
+pinyin: "Sun Xin"
+},
+{
+sid: "30028",
+status: "99",
+gid: "30",
+tid: "302",
+sname: "唐莉佳",
+pinyin: "Tang LiJia"
+},
+{
+sid: "30082",
+status: "99",
+gid: "30",
+tid: "302",
+sname: "吴羽霏",
+pinyin: "Wu YuFei"
+},
+{
+sid: "30068",
+status: "99",
+gid: "30",
+tid: "302",
+sname: "谢艾琳",
+pinyin: "Xie AiLin"
+},
+{
+sid: "30088",
+status: "99",
+gid: "30",
+tid: "302",
+sname: "徐佳音",
+pinyin: "Xu JiaYin"
+},
+{
+sid: "30029",
+status: "99",
+gid: "30",
+tid: "302",
+sname: "冼燊楠",
+pinyin: "Xian ShenNan"
+},
+{
+sid: "30031",
+status: "99",
+gid: "30",
+tid: "302",
+sname: "熊心瑶",
+pinyin: "Xiong XinYao"
+},
+{
+sid: "30032",
+status: "99",
+gid: "30",
+tid: "302",
+sname: "郑丹妮",
+pinyin: "Zheng DanNi"
+},
+{
+sid: "30034",
+status: "99",
+gid: "30",
+tid: "302",
+sname: "左婧媛",
+pinyin: "Zuo JingYuan"
+},
+{
+sid: "30100",
+status: "99",
+gid: "30",
+tid: "302",
+sname: "张润",
+pinyin: "Zhang Run"
+},
+{
+sid: "30106",
+status: "99",
+gid: "30",
+tid: "302",
+sname: "张昕",
+pinyin: "Zhang Xin"
+},
+{
+sid: "30048",
+status: "99",
+gid: "30",
+tid: "303",
+sname: "陈桂君",
+pinyin: "Chen GuiJun"
+},
+{
+sid: "30074",
+status: "99",
+gid: "30",
+tid: "303",
+sname: "邓惠恩",
+pinyin: "Deng HuiEn"
+},
+{
+sid: "30104",
+status: "99",
+gid: "30",
+tid: "303",
+sname: "方琪",
+pinyin: "Fang Qi"
+},
+{
+sid: "30091",
+status: "99",
+gid: "30",
+tid: "303",
+sname: "郭铱宁",
+pinyin: "Guo YiNing"
+},
+{
+sid: "30093",
+status: "99",
+gid: "30",
+tid: "303",
+sname: "梁乔",
+pinyin: "Liang Qiao"
+},
+{
+sid: "30079",
+status: "99",
+gid: "30",
+tid: "303",
+sname: "梁婉琳",
+pinyin: "Liang WanLin"
+},
+{
+sid: "30054",
+status: "99",
+gid: "30",
+tid: "303",
+sname: "龙亦瑞",
+pinyin: "Long YiRui"
+},
+{
+sid: "30105",
+status: "99",
+gid: "30",
+tid: "303",
+sname: "赖梓惜",
+pinyin: "Lai ZiXi"
+},
+{
+sid: "30043",
+status: "99",
+gid: "30",
+tid: "303",
+sname: "农燕萍",
+pinyin: "Nong YanPing"
+},
+{
+sid: "30050",
+status: "99",
+gid: "30",
+tid: "303",
+sname: "王翠菲",
+pinyin: "Wang CuiFei"
+},
+{
+sid: "30055",
+status: "99",
+gid: "30",
+tid: "303",
+sname: "王炯义",
+pinyin: "Wang JiongYi"
+},
+{
+sid: "30042",
+status: "99",
+gid: "30",
+tid: "303",
+sname: "王偲越",
+pinyin: "Wang SiYue"
+},
+{
+sid: "30041",
+status: "99",
+gid: "30",
+tid: "303",
+sname: "王秭歆",
+pinyin: "Wang ZiXin"
+},
+{
+sid: "30095",
+status: "99",
+gid: "30",
+tid: "303",
+sname: "谢菲菲",
+pinyin: "Xie FeiFei"
+},
+{
+sid: "30047",
+status: "99",
+gid: "30",
+tid: "303",
+sname: "杨可璐",
+pinyin: "Yang KeLu"
+},
+{
+sid: "30046",
+status: "99",
+gid: "30",
+tid: "303",
+sname: "杨媛媛",
+pinyin: "Yang YuanYuan"
+},
+{
+sid: "30069",
+status: "99",
+gid: "30",
+tid: "303",
+sname: "张秋怡",
+pinyin: "Zhang QiuYi"
+},
+{
+sid: "30108",
+status: "99",
+gid: "30",
+tid: "304",
+sname: "刘果",
+pinyin: "Liu Guo"
+},
+{
+sid: "30109",
+status: "99",
+gid: "30",
+tid: "304",
+sname: "马昕玥",
+pinyin: "Ma XinYue"
+},
+{
+sid: "30107",
+status: "99",
+gid: "30",
+tid: "304",
+sname: "吴思琪",
+pinyin: "Wu SiQi"
+},
+{
+sid: "30058",
+status: "44",
+gid: "30",
+tid: "301",
+sname: "陈俊宏",
+pinyin: "Chen JunHong"
+},
+{
+sid: "30059",
+status: "44",
+gid: "30",
+tid: "301",
+sname: "陈乐添",
+pinyin: "Chen LeTian"
+},
+{
+sid: "30002",
+status: "44",
+gid: "30",
+tid: "301",
+sname: "陈雨琪",
+pinyin: "Chen YuQi"
+},
+{
+sid: "30061",
+status: "44",
+gid: "30",
+tid: "301",
+sname: "方晓瑜",
+pinyin: "Fang XiaoYu"
+},
+{
+sid: "30006",
+status: "44",
+gid: "30",
+tid: "301",
+sname: "李沁洁",
+pinyin: "Li QinJie"
+},
+{
+sid: "30015",
+status: "44",
+gid: "30",
+tid: "301",
+sname: "张凯祺",
+pinyin: "Zhang KaiQi"
+},
+{
+sid: "30019",
+status: "44",
+gid: "30",
+tid: "302",
+sname: "陈慧婧",
+pinyin: "Chen HuiJing"
+},
+{
+sid: "30062",
+status: "44",
+gid: "30",
+tid: "302",
+sname: "高雪逸",
+pinyin: "Gao XueYi"
+},
+{
+sid: "30067",
+status: "44",
+gid: "30",
+tid: "302",
+sname: "唐诗怡",
+pinyin: "Tang ShiYi"
+},
+{
+sid: "30030",
+status: "44",
+gid: "30",
+tid: "302",
+sname: "肖文铃",
+pinyin: "Xiao WenLing"
+},
+{
+sid: "30033",
+status: "44",
+gid: "30",
+tid: "302",
+sname: "左嘉欣",
+pinyin: "Zuo JiaXin"
+},
+{
+sid: "30070",
+status: "44",
+gid: "30",
+tid: "302",
+sname: "郑悦",
+pinyin: "Zheng Yue"
+},
+{
+sid: "30072",
+status: "44",
+gid: "30",
+tid: "303",
+sname: "毕瑞珊",
+pinyin: "Bi RuiShan"
+},
+{
+sid: "30040",
+status: "44",
+gid: "30",
+tid: "303",
+sname: "杜秋霖",
+pinyin: "Du QiuLin"
+},
+{
+sid: "30077",
+status: "44",
+gid: "30",
+tid: "303",
+sname: "何梦瑶",
+pinyin: "He MengYao"
+},
+{
+sid: "30039",
+status: "44",
+gid: "30",
+tid: "303",
+sname: "刘嘉怡",
+pinyin: "Liu JiaYi"
+},
+{
+sid: "30049",
+status: "44",
+gid: "30",
+tid: "303",
+sname: "王盈",
+pinyin: "Wang Ying"
+},
+{
+sid: "30083",
+status: "44",
+gid: "30",
+tid: "303",
+sname: "叶晓梦",
+pinyin: "Ye XiaoMeng"
+},
+{
+sid: "30084",
+status: "44",
+gid: "30",
+tid: "303",
+sname: "余芷媛",
+pinyin: "Yu ZhiYuan"
+},
+{
+sid: "30045",
+status: "44",
+gid: "30",
+tid: "303",
+sname: "张心雨",
+pinyin: "Zhang XinYu"
+},
+{
+sid: "30085",
+status: "44",
+gid: "30",
+tid: "304",
+sname: "李晨曦",
+pinyin: "Li ChenXi"
+},
+{
+sid: "30081",
+status: "44",
+gid: "30",
+tid: "304",
+sname: "汪慕远",
+pinyin: "Wang MuYuan"
+},
+{
+sid: "30087",
+status: "44",
+gid: "30",
+tid: "304",
+sname: "王梦媛",
+pinyin: "Wang MengYuan"
+},
+{
+sid: "30089",
+status: "44",
+gid: "30",
+tid: "304",
+sname: "肖文静",
+pinyin: "Xiao WenJing"
+},
+{
+sid: "40001",
+status: "44",
+gid: "40",
+tid: "401",
+sname: "陈婧文",
+pinyin: "Chen JingWen"
+},
+{
+sid: "40036",
+status: "44",
+gid: "40",
+tid: "401",
+sname: "陈奕君",
+pinyin: "Chen YiJun"
+},
+{
+sid: "40004",
+status: "44",
+gid: "40",
+tid: "401",
+sname: "关思雨",
+pinyin: "Guan SiYu"
+},
+{
+sid: "40037",
+status: "44",
+gid: "40",
+tid: "401",
+sname: "菅瑞静",
+pinyin: "Jian RuiJing"
+},
+{
+sid: "40048",
+status: "44",
+gid: "40",
+tid: "401",
+sname: "李彬玉",
+pinyin: "Li BinYu"
+},
+{
+sid: "40007",
+status: "44",
+gid: "40",
+tid: "401",
+sname: "刘娇",
+pinyin: "Liu Jiao"
+},
+{
+sid: "40008",
+status: "44",
+gid: "40",
+tid: "401",
+sname: "刘娜",
+pinyin: "Liu Na"
+},
+{
+sid: "40011",
+status: "44",
+gid: "40",
+tid: "401",
+sname: "南翎璞",
+pinyin: "Nan Ling Pu"
+},
+{
+sid: "40012",
+status: "44",
+gid: "40",
+tid: "401",
+sname: "秦玺",
+pinyin: "Qin Xi"
+},
+{
+sid: "40015",
+status: "44",
+gid: "40",
+tid: "401",
+sname: "徐静妍",
+pinyin: "Xu JingYan"
+},
+{
+sid: "40038",
+status: "44",
+gid: "40",
+tid: "401",
+sname: "叶锦童",
+pinyin: "Ye JinTong"
+},
+{
+sid: "40018",
+status: "44",
+gid: "40",
+tid: "401",
+sname: "朱燕",
+pinyin: "Zhu Yan"
+},
+{
+sid: "40019",
+status: "44",
+gid: "40",
+tid: "402",
+sname: "董思佳",
+pinyin: "Dong SiJia"
+},
+{
+sid: "40041",
+status: "44",
+gid: "40",
+tid: "402",
+sname: "方诗涵",
+pinyin: "Fang ShiHan"
+},
+{
+sid: "40043",
+status: "44",
+gid: "40",
+tid: "402",
+sname: "龚梦婷",
+pinyin: "Gong MengTing"
+},
+{
+sid: "40021",
+status: "44",
+gid: "40",
+tid: "402",
+sname: "寇承希",
+pinyin: "Kou ChengXi"
+},
+{
+sid: "40044",
+status: "44",
+gid: "40",
+tid: "402",
+sname: "逯芳竹",
+pinyin: "Lu FangZhu"
+},
+{
+sid: "40024",
+status: "44",
+gid: "40",
+tid: "402",
+sname: "李熙凝",
+pinyin: "Li XiNing"
+},
+{
+sid: "40026",
+status: "44",
+gid: "40",
+tid: "402",
+sname: "任雨情",
+pinyin: "Ren YuQing"
+},
+{
+sid: "40035",
+status: "44",
+gid: "40",
+tid: "402",
+sname: "王金铭",
+pinyin: "Wang JinMing"
+},
+{
+sid: "40028",
+status: "44",
+gid: "40",
+tid: "402",
+sname: "杨肖",
+pinyin: "Yang Xiao"
+},
+{
+sid: "40031",
+status: "44",
+gid: "40",
+tid: "402",
+sname: "张儒轶",
+pinyin: "Zhang RuYi"
+},
+{
+sid: "40032",
+status: "44",
+gid: "40",
+tid: "402",
+sname: "张云梦",
+pinyin: "Zhang YunMeng"
+},
+{
+sid: "40033",
+status: "44",
+gid: "40",
+tid: "402",
+sname: "张幼柠",
+pinyin: "Zhang YouNing"
+},
+{
+sid: "40034",
+status: "44",
+gid: "40",
+tid: "402",
+sname: "张雨晴",
+pinyin: "Zhang YuQing"
+},
+{
+sid: "50002",
+status: "44",
+gid: "50",
+tid: "501",
+sname: "李恩锐",
+pinyin: "Li EnRui"
+},
+{
+sid: "50005",
+status: "44",
+gid: "50",
+tid: "501",
+sname: "李泽亚",
+pinyin: "Li ZeYa"
+},
+{
+sid: "50011",
+status: "44",
+gid: "50",
+tid: "501",
+sname: "陶菀瑞",
+pinyin: "Tao WanRui"
+},
+{
+sid: "50018",
+status: "44",
+gid: "50",
+tid: "501",
+sname: "周源",
+pinyin: "Zhou Yuan"
+},
+{
+sid: "50019",
+status: "44",
+gid: "50",
+tid: "502",
+sname: "艾芷亦",
+pinyin: "Ai ZhiYi"
+},
+{
+sid: "50021",
+status: "44",
+gid: "50",
+tid: "502",
+sname: "樊曦月",
+pinyin: "Fan XiYue"
+},
+{
+sid: "50025",
+status: "44",
+gid: "50",
+tid: "502",
+sname: "刘炅然",
+pinyin: "Liu JiongRan"
+},
+{
+sid: "50033",
+status: "44",
+gid: "50",
+tid: "502",
+sname: "夏文倩",
+pinyin: "Xia WenQian"
+},
+{
+sid: "50034",
+status: "44",
+gid: "50",
+tid: "502",
+sname: "章宇阳",
+pinyin: "Zhang YuYang"
+},
+{
+sid: "50038",
+status: "44",
+gid: "50",
+tid: "504",
+sname: "吴晓桐",
+pinyin: "Wu XiaoTong"
+},
+{
+sid: "50042",
+status: "44",
+gid: "50",
+tid: "504",
+sname: "余梦露",
+pinyin: "Yu MengLu"
+},
+{
+sid: "50043",
+status: "44",
+gid: "50",
+tid: "504",
+sname: "邹冰清",
+pinyin: "Zou BingQing"
+},
+{
+sid: "70001",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "卞佳宁",
+pinyin: "Bian JiaNing"
+},
+{
+sid: "70002",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "曹露丹",
+pinyin: "Cao LouDan"
+},
+{
+sid: "70003",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "程一",
+pinyin: "Cheng Yi"
+},
+{
+sid: "70004",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "陈韫凌",
+pinyin: "Chen WenLing"
+},
+{
+sid: "70007",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "邓倩",
+pinyin: "Deng Qian"
+},
+{
+sid: "70008",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "刁滢",
+pinyin: "Diao Ying"
+},
+{
+sid: "70009",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "戴紫薇",
+pinyin: "Dai ZiWei"
+},
+{
+sid: "70010",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "冯嘉宝",
+pinyin: "Feng JiaBao"
+},
+{
+sid: "70011",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "冯嘉希",
+pinyin: "Feng JiaXi"
+},
+{
+sid: "70012",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "冯译莹",
+pinyin: "Feng YiYing"
+},
+{
+sid: "70013",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "付紫琪",
+pinyin: "Fu ZiQi"
+},
+{
+sid: "70014",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "高志娴",
+pinyin: "Gao ZhiXian"
+},
+{
+sid: "70015",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "黄嘉怡",
+pinyin: "Huang JiaYi"
+},
+{
+sid: "70017",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "韩林芹",
+pinyin: "Han LinQin"
+},
+{
+sid: "70018",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "黄琬璎",
+pinyin: "Huang WanYing"
+},
+{
+sid: "70020",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "康兆薇",
+pinyin: "Kang ZhaoWei"
+},
+{
+sid: "70021",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "兰昊",
+pinyin: "Lan Hao"
+},
+{
+sid: "70022",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "李慧",
+pinyin: "Li Hui"
+},
+{
+sid: "70023",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "李海淋",
+pinyin: "Li HaiLin"
+},
+{
+sid: "70024",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "李泓瑶",
+pinyin: "Li HongYao"
+},
+{
+sid: "70025",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "赖俊亦",
+pinyin: "Lai JunYi"
+},
+{
+sid: "70026",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "梁可",
+pinyin: "Liang Ke"
+},
+{
+sid: "70027",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "李晴",
+pinyin: "Li Qing"
+},
+{
+sid: "70028",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "李清雨",
+pinyin: "Li QingYu"
+},
+{
+sid: "70029",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "李苏洪",
+pinyin: "Li SuHong"
+},
+{
+sid: "70030",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "罗雪丽",
+pinyin: "Luo XueLi"
+},
+{
+sid: "70031",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "刘宇晴",
+pinyin: "Liu YuQing"
+},
+{
+sid: "70032",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "雷宇霄",
+pinyin: "Lei YuXiao"
+},
+{
+sid: "70035",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "毛其羽",
+pinyin: "Mao QiYu"
+},
+{
+sid: "70036",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "门秀天",
+pinyin: "Men XiuTian"
+},
+{
+sid: "70037",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "孟玥",
+pinyin: "Meng 玥"
+},
+{
+sid: "70038",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "毛译晗",
+pinyin: "Mao YiHan"
+},
+{
+sid: "70039",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "彭榆涵",
+pinyin: "Peng YuHan"
+},
+{
+sid: "70019",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "乔钰珂",
+pinyin: "Qiao YuKe"
+},
+{
+sid: "70040",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "曲悦萌",
+pinyin: "Qu YueMeng"
+},
+{
+sid: "70041",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "谯玉珍",
+pinyin: "Qiao YuZhen"
+},
+{
+sid: "70042",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "任玥霖",
+pinyin: "Ren 玥Lin"
+},
+{
+sid: "70043",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "尚官",
+pinyin: "Shang Guan"
+},
+{
+sid: "70044",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "孙敏",
+pinyin: "Sun Min"
+},
+{
+sid: "70045",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "司珀琳",
+pinyin: "Si PoLin"
+},
+{
+sid: "70046",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "舒湘",
+pinyin: "Shu Xiang"
+},
+{
+sid: "70047",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "田密",
+pinyin: "Tian Mi"
+},
+{
+sid: "70048",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "田倩兰",
+pinyin: "Tian QianLan"
+},
+{
+sid: "70049",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "田祯臻",
+pinyin: "Tian ZhenZhen"
+},
+{
+sid: "70050",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "伍寒琪",
+pinyin: "Wu HanQi"
+},
+{
+sid: "70051",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "吴晶晶",
+pinyin: "Wu JingJing"
+},
+{
+sid: "70052",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "王露皎",
+pinyin: "Wang LouJiao"
+},
+{
+sid: "70053",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "王梦竹",
+pinyin: "Wang MengZhu"
+},
+{
+sid: "70054",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "武晓迪",
+pinyin: "Wu XiaoDi"
+},
+{
+sid: "70055",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "魏小燕",
+pinyin: "Wei XiaoYan"
+},
+{
+sid: "70056",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "吴学雨",
+pinyin: "Wu XueYu"
+},
+{
+sid: "70057",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "王娱博",
+pinyin: "Wang YuBo"
+},
+{
+sid: "70058",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "王永祺",
+pinyin: "Wang YongQi"
+},
+{
+sid: "70059",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "王梓",
+pinyin: "Wang Zi"
+},
+{
+sid: "70060",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "徐斐然",
+pinyin: "Xu FeiRan"
+},
+{
+sid: "70061",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "熊沁娴",
+pinyin: "Xiong QinXian"
+},
+{
+sid: "70062",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "相望",
+pinyin: "Xiang Wang"
+},
+{
+sid: "70063",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "许婉玉",
+pinyin: "Xu WanYu"
+},
+{
+sid: "70064",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "许逸",
+pinyin: "Xu Yi"
+},
+{
+sid: "70065",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "徐伊人",
+pinyin: "Xu YiRen"
+},
+{
+sid: "70066",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "熊依依",
+pinyin: "Xiong YiYi"
+},
+{
+sid: "70068",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "杨惠婷",
+pinyin: "Yang HuiTing"
+},
+{
+sid: "70067",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "於佳怡",
+pinyin: "Yu JiaYi"
+},
+{
+sid: "70069",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "杨美琪",
+pinyin: "Yang MeiQi"
+},
+{
+sid: "70089",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "鄢羽蝶",
+pinyin: "Yan YuDie"
+},
+{
+sid: "70070",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "杨允涵",
+pinyin: "Yang YunHan"
+},
+{
+sid: "70071",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "杨宇馨",
+pinyin: "Yang YuXin"
+},
+{
+sid: "70072",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "张韩紫陌",
+pinyin: "ZhangHan ZiMo"
+},
+{
+sid: "70073",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "曾佳",
+pinyin: "Zeng Jia"
+},
+{
+sid: "70074",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "张瑾瑜",
+pinyin: "Zhang JinYu"
+},
+{
+sid: "70075",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "周佳怡",
+pinyin: "Zhou JiaYi"
+},
+{
+sid: "70076",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "朱敏",
+pinyin: "Zhu Min"
+},
+{
+sid: "70077",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "张敏淇",
+pinyin: "Zhang MinQi"
+},
+{
+sid: "70078",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "郑诗琪",
+pinyin: "Zheng ShiQi"
+},
+{
+sid: "70079",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "赵思雨",
+pinyin: "Zhao SaiYu"
+},
+{
+sid: "70080",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "周桐冉",
+pinyin: "Zhou TongRan"
+},
+{
+sid: "70081",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "左欣",
+pinyin: "Zuo Xin"
+},
+{
+sid: "70082",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "赵欣雨",
+pinyin: "Zhao XinYu"
+},
+{
+sid: "70083",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "郑一凡",
+pinyin: "Zheng YiFan"
+},
+{
+sid: "70084",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "张语倩",
+pinyin: "Zhang YuQian"
+},
+{
+sid: "70085",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "赵泽慧",
+pinyin: "Zhao ShiHui"
+},
+{
+sid: "70086",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "章泽婷",
+pinyin: "Zhang ShiTing"
+},
+{
+sid: "70087",
+status: "99",
+gid: "70",
+tid: "701",
+sname: "张紫颖",
+pinyin: "Zhang ZiYing"
+}
+]
+}
+)
